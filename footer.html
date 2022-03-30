@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/19e89b1268.js" crossorigin="anonymous"></script>
     <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- <link href="https://fonts.googleapis.com/icons?family-Material+Icons" rel="stylesheet"> -->
     <style>
         #footer1{
             width: 100%;
             height: 180px;
-            /* border: 1px solid black; */
+             /* border: 1px solid black;  */
             display: flex;
             justify-content: space-between;
             background-color: rgb(245,245,245);
@@ -17,7 +20,7 @@
         #footer1>div{
             width: 30%;
             height: 100%;
-            /* border: 1px solid red; */
+             /* border: 1px solid red;  */
         }
         #footer1>div>p{
             text-align: center;
@@ -29,7 +32,9 @@
             height: 50px;
             width: 150px;
             /* border: 1px solid green; */
-            margin-left: 10px;   
+            margin-left: 10px;  
+        cursor:pointer;
+
         }
      
     #appstore_div{
@@ -38,6 +43,42 @@
        padding-left: 35px;
       
         margin: auto;
+    }
+    #footer1Logo{
+        display: flex;
+        justify-content: space-between;
+       
+    }
+    #footer1Logo>div{
+        /* border: 1px solid teal; */
+        width: 23%;
+        height: 100%;
+      }
+      #footer1Logo>div>p{
+          text-align: center;
+          font-family: sans-serif;
+          color: gray;
+      }
+      #footer1Logo>div>i{
+          margin: 30px 0 0 25px;
+          font-size: 40px;
+        cursor:pointer;
+        text-align: center;
+       
+    }
+    #icons{
+        /* border: 1px solid red; */
+        text-align: center;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    #icons>i{
+        margin: 10px 10px;
+    }
+    #footer1Logo>div>img{
+        width: 40px;
+        height: 40px;
+        margin: 30px 0 0 25px;
     }
 
     #footer2{
@@ -50,7 +91,8 @@
     #footer2>div{
         width: 25%;
         height: 100%; 
-    /* border: 1px solid black;   */
+        
+     
  }
  #ques{
      display: flex;
@@ -93,9 +135,10 @@
      font-family: sans-serif;
  }
  #card_logo2{
-     width: 70px;
-     height: 30px;
+     width: 60px;
+     height: 40px;
      margin-left: 5px;
+     /* border: 1px solid black;  */
 }
 #footer3{
     width: 95%;
@@ -108,7 +151,7 @@
 }
 #footer3>div>p{
     color: gray;
-  
+    cursor:pointer;
 }
 #footer3>div{
     width: 15%;
@@ -150,6 +193,7 @@ h4{
 #footer4_div1>div>p{
     margin-bottom: -4px;
     font-size: 14px;
+    cursor:pointer;
 }
 #footer4_innerDiv{
     margin-bottom: -4px;
@@ -161,7 +205,7 @@ h4{
 }
 #footer4_div2>div>div{
     width: 45%;
-    
+    cursor:pointer;
     /* border: 1px solid green; */
 }
 select{
@@ -185,8 +229,39 @@ select{
            </div>
          
        </div>
-       <div></div>
-       <div></div>
+       <div id="footer1Logo">
+           <div>
+           <img src="https://cdn.iconscout.com/icon/premium/png-128-thumb/secure-login-1646729-1397140.png">
+               <p>Authentic Products
+            </p>
+           </div>
+           <div>
+            <i class="fa fa-truck" aria-hidden="true"></i>
+               <p>Free Delivery*</p>
+           </div>
+           <div>
+               <!-- <img src="C:\Users\HP\Desktop\transfer-arrow.png"> -->
+               <!-- <i class="fa fa-arrow-down"></i> -->
+               <i class="fa fa-arrow-right-arrow-left"></i>
+               <p>Easy Exchange and Return
+            </p>
+           </div>
+           <div>
+               <!-- <img src="C:\Users\HP\Desktop\delivery-tracking.png"> -->
+               <i class="fa fa-box "></i>
+               <p>Express Store Pickup</p>
+               
+              
+           </div>
+       </div>
+       <div>
+        <p>FOLLOW US</p>
+        <div id="icons">
+            <i class="fab fa-facebook icon-color"></i>
+            <i class="fab fa-twitter" ></i>
+            <i class="fab fa-instagram-square icon-color"></i>
+        </div>
+       </div>
    </div>
 
    <div id="footer2">
@@ -211,7 +286,7 @@ select{
        <div>
            <p id="footer2_p2">VERIFIED BY</p>
            <div>
-               <img id="card_logo2"  src="https://www.intercom.com.eg/wp-content/uploads/2017/12/entrust-1-300x300.jpg" alt="">
+               <img id="card_logo2"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDuIhYsHh4U1plittuJOPVNb3irMlyCWVtuw&usqp=CAU" alt="">
                <img id="card_logo2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvH4JQE-wZDPkTw3oEF-9YlyZ1WU2lmuifBK9mwqdq5d4UiOxzRWdPwTPCu-oh09MY82o&usqp=CAU" alt="">
               <img  id="card_logo2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScQlRFDOA3eMIRZQ0icoMe-u4jh22adZ2fwQ&usqp=CAU" alt="">
               <img id="card_logo2" src="https://getlogovector.com/wp-content/uploads/2019/10/pci-dss-compliant-logo-vector.png" alt="">    
