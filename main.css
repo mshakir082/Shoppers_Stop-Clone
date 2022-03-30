@@ -1,0 +1,125 @@
+body{
+    margin:0px;
+    padding:0px;
+}
+
+#container{
+  width:200px;
+  height:200px;
+}
+
+.plpH2TagCategoryName {
+
+  color: #333;
+  
+  font-family: 'Cormorant', serif,bold;
+
+}
+#container1Sunglass{
+    display:flex;
+    margin-left:400px;
+    margin-top:100px;
+   
+}
+.sortPopularDiv{
+
+  
+  padding:3px;
+  margin-top:5px;
+  margin-left:20px;
+
+  color: #999999;
+  font-family:  'Metropolis-Medium',serif,sans-serif;
+  font-size:21px;
+  /* border:1px solid black; */
+  margin-left:100px;
+  margin-top:7px;
+
+}
+#container2Sunglass{
+
+  /* border:1px solid #333; */
+  display:flex;
+  gap:5px;
+
+}
+#leftnavbar{
+
+  
+  margin-left:160px;
+
+}
+
+.ln-divs{
+
+  border:0.5px solid #333;
+  padding:10px;
+  font-family: serif,sans-serif,bold;
+
+}
+
+#databox{
+
+  
+  width:805px;
+  display:grid;
+  grid-template-columns: repeat(4,1fr);
+  gap:7px;
+
+
+}
+.databoxdivs{
+
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width:190px;
+  height:410px;
+  overflow:hidden;
+
+
+}
+.divForNamedata{
+
+  overflow:hidden;
+  width:190px;
+  height:70px;
+  margin-top:-15px;
+
+}
+
+.countSortPopularDiv{
+
+  color: #999999;
+  font-family:  'Metropolis-Medium',serif,sans-serif;
+  font-size:15px;
+  border:1px solid black;
+  padding:2px;
+
+}
+
+.count{
+
+  color: #999999;
+  font-family:  'Metropolis-Medium',serif,sans-serif;
+  font-size:21px;
+  /* padding: 15px,0px,0px,6px; */
+}
+
+.checkdiv{
+   
+    padding-top: 11px;
+    margin-left:15px;
+
+    
+}
+
+#sortPopularDropDown{
+
+  border:none;
+  color: #999999;
+  font-family:  'Metropolis-Medium',serif,sans-serif;
+  font-size:15px;
+  padding:5px;
+  text-decoration: none;
+  
+
+}
