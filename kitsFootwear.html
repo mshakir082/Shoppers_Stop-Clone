@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Men Clothing Page</title>
     <link rel="stylesheet" href="./style/CheckBarSlider.css">
     <link rel="stylesheet" href="./style/mensCloth.css">
     <link rel="stylesheet" href="./style/navbar.css">
     <link rel="stylesheet" href="./style/footerBar.css">
     <script src="https://kit.fontawesome.com/088bab0eb4.js" crossorigin="anonymous"></script>
+    <title>Document</title>
 </head>
 <body>
+    
     <div id="header"></div>
     <div id="slideshow"></div>
   
     <div id="heading-option">
         
-        <p id="mensHeading">Men's Clothing</p>
+        <p id="mensHeading">Boys </p>
         
      <select  id="sorter">
         <option value="">SORT BY: POPULAR</option>
@@ -38,17 +38,15 @@
     </div>
 
 <div id="footerbar"></div>
+
 </body>
 </html>
-
-
 <script type="module">
+let kidsFotwear=JSON.parse(localStorage.getItem("kidsFotwear")) ;
 
+//  Import Navbar Section-------
 
- let mensClothingData=JSON.parse(localStorage.getItem("mensCotheData"));
- //  Import Navbar Section-------
-
- import navbar from "./scripts/navbar.js"
+import navbar from "./scripts/navbar.js"
     var header=document.getElementById("header")
     header.innerHTML=navbar();
  
@@ -56,7 +54,7 @@ import {slideImagfun,mensDatashow} from "./scripts/mensClothe.js"
 
 let slideshow1 = document.getElementById("slideshow");
 
-let images = ["https://cdn.dynamicyield.com/api/8770829/images/1679f7f8c71c6__TSHIRT--web--01.jpg",
+let images = ["https://cdn.dynamicyield.com/api/8770829/images/1dee030f3c39d__festival-generic-banner-web.jpg",
               "https://cdn.dynamicyield.com/api/8770829/images/20043f3a650d7__Masks---WEB---PLP-02-1.jpg",
             "https://cdn.dynamicyield.com/api/8770829/images/981c39ba51b4__plp--adi-_-rbk---static.jpg",
         "https://cdn.dynamicyield.com/api/8770829/images/38bce4010910b__Shoppers-Stop-Banners-Web-1232px216px.jpg"];
@@ -66,7 +64,7 @@ slideImagfun(images,slideshow1);
 
 let menDetailAppent=document.getElementById("main");
 
-mensDatashow(mensClothingData,menDetailAppent)
+mensDatashow(kidsFotwear,menDetailAppent)
 
 // footer bar import-------
 import {footerbar} from "./scripts/footer.js"
@@ -79,16 +77,16 @@ document.getElementById("sorter").addEventListener("click",() =>{
       var sorting=document.getElementById("sorter").value
       console.log(sorting)
       if(sorting=='h2l'){
-         mensClothingData.sort((a,b)=>{
+        kidsFotwear.sort((a,b)=>{
               return b.price - a.price;
           })
-          mensDatashow(mensClothingData,menDetailAppent)
+          mensDatashow(kidsFotwear,menDetailAppent)
       }
       else if(sorting=='l2h'){
-         mensClothingData.sort(function (a,b){
+        kidsFotwear.sort(function (a,b){
               return a.price - b.price;
           })
-          mensDatashow(mensClothingData,menDetailAppent)
+          mensDatashow(kidsFotwear,menDetailAppent)
       }
    
    });
@@ -97,7 +95,7 @@ document.getElementById("sorter").addEventListener("click",() =>{
 
    let checkbox1= document.getElementById("inner");
    checkbox1.innerHTML =checkbox();
+
 </script>
 
 <script src="./data/data.js"></script>
-
