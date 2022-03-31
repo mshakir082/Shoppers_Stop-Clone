@@ -25,9 +25,10 @@
    margin-left: 50px;
    
 }
-img{
+#right_icons>h4>a>img{
     width: 100%;
-    height: 100%;
+    height: 50%;
+    /* border:1px solid red; */
 }
 i{
     font-size: 20px;
@@ -168,6 +169,6 @@ a{
 .submenu>ul>li>a:hover{
 background-color: tomato;
 }
-button{
+#navButton{
     background-color: red;
 }

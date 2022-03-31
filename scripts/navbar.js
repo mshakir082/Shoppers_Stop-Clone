@@ -101,7 +101,7 @@ const navbar=()=>{
         </ul>
         <ul>
             <img src="https://sslimages.shoppersstop.com/sys-master/root/h02/hc9/27108367990814/stop-men-navigation-banner.jpg">
-            <button>shop Now</button>
+            <button id="navButton">shop Now</button>
         </ul>
 
         <ul>
