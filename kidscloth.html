@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>kid's watch page</title>
+    <link rel="stylesheet" href="./style/CheckBarSlider.css">
+    <link rel="stylesheet" href="./style/mensCloth.css">
+    <link rel="stylesheet" href="./style/navbar.css">
+    <link rel="stylesheet" href="./style/footerBar.css">
+    <script src="https://kit.fontawesome.com/088bab0eb4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header"></div>
+    <div id="slideshow"></div>
+  
+    <div id="heading-option">
+        
+        <p id="mensHeading">kid's watch</p>
+        
+     <select  id="sorter">
+        <option value="">SORT BY: POPULAR</option>
+        <option value="">Relavance</option>
+        <option value="">Popular</option>
+        <option value="">New</option>
+        <option value="">Discount</option>
+        <option value="">Best Seller</option>
+        <option value="l2h">Price: Low to High</option>
+        <option value="h2l">Price: High to Low</option>
+      </select>
+    </div>
+    <div id="container">
+    
+        <div id="inner"></div>
+        <div id="main"></div>   
+    </div>
+
+<div id="footerbar"></div>
+</body>
+</html>
+
+
+<script type="module">
+
+
+ let mensClothingData=JSON.parse(localStorage.getItem("kidsclothdata"));
+ //  Import Navbar Section-------
+
+ import navbar from "./scripts/navbar.js"
+    var header=document.getElementById("header")
+    header.innerHTML=navbar();
+ 
+import {slideImagfun,mensDatashow} from "./scripts/mensClothe.js"
+
+let slideshow1 = document.getElementById("slideshow");
+
+let images = ["https://cdn.dynamicyield.com/api/8770829/images/1679f7f8c71c6__TSHIRT--web--01.jpg",
+              "https://cdn.dynamicyield.com/api/8770829/images/20043f3a650d7__Masks---WEB---PLP-02-1.jpg",
+            "https://cdn.dynamicyield.com/api/8770829/images/981c39ba51b4__plp--adi-_-rbk---static.jpg",
+        "https://cdn.dynamicyield.com/api/8770829/images/38bce4010910b__Shoppers-Stop-Banners-Web-1232px216px.jpg"];
+    
+slideImagfun(images,slideshow1);
+
+
+let menDetailAppent=document.getElementById("main");
+
+mensDatashow(mensClothingData,menDetailAppent)
+
+// footer bar import-------
+import {footerbar} from "./scripts/footer.js"
+let footer= document.getElementById("footerbar");
+footer.innerHTML=footerbar();
+
+
+document.getElementById("sorter").addEventListener("click",() =>{
+      
+      var sorting=document.getElementById("sorter").value
+      console.log(sorting)
+      if(sorting=='h2l'){
+         mensClothingData.sort((a,b)=>{
+              return b.price - a.price;
+          })
+          mensDatashow(mensClothingData,menDetailAppent)
+      }
+      else if(sorting=='l2h'){
+         mensClothingData.sort(function (a,b){
+              return a.price - b.price;
+          })
+          mensDatashow(mensClothingData,menDetailAppent)
+      }
+   
+   });
+
+   import {checkbox} from "./scripts/checkbox.js"
+
+   let checkbox1= document.getElementById("inner");
+   checkbox1.innerHTML =checkbox();
+</script>
+
+<script src="./scripts/kidsclothdata.js"></script>
