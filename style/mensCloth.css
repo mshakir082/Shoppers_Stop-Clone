@@ -1,23 +1,26 @@
 #container{
     display: flex;
-    /* border: 1px solid black; */
+   
     width: 95%;
     /* height: 500px; */
     margin: auto;
 }
 #heading-option{
+    
  display: flex;
  width: 67%;
  justify-content: space-between;
  margin-left: 390px;
 }
 #mensHeading{
+    
     font-size: 30px;
     font-style: italic;
     font-weight: bold;
     margin-top :50px;
 }
 #sorter{
+    border: 1px solid black;
     height: 30px;
     width: 220px;
     margin-top: 50px;
@@ -27,16 +30,18 @@
 
 }
 #checkboxes{
-    width: 25%;
+   
+    width: 100%;
     /* border: 1px solid red; */
 }
 #main{
-    width: 75%;
+    width: 200%;
     /* border: 1px solid red; */
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap:15px;
-    /* padding: 10px; */
+    padding: 10px;
+   
     font-family: sans-serif;
 }
 #main>div{
@@ -46,7 +51,8 @@
 #homeDataRowDiv>img{
          width: 100%;
          height: 70%;
-        
+         /* border: 1px solid red; */
+         margin-left: -2px;
      }
      #homeDataRowDiv{
          height: 350px;

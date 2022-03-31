@@ -58,7 +58,7 @@ data.forEach(({image_url, name, decs,  price, strike_price, offer})=>{
          
          priceTag2.innerText=`₹${strike_price}`;
          priceTag2.id="priceTag2"
-
+      }
 
          let priceOffer = document.createElement("h5");
          priceOffer.innerText=` ${offer}`;
@@ -81,32 +81,11 @@ data.forEach(({image_url, name, decs,  price, strike_price, offer})=>{
 
          appendDiv.append(rowDiv);
 
-   })
+   });
 }
+
 export  {slideImagfun,mensDatashow} 
 
-
-
-   //  ------------Sort Function--------------
-
-
-   document.getElementById("sorter").addEventListener("click",() =>{
-      
-      var sorting=document.getElementById("sorter").value
-      console.log(sorting)
-      if(sorting=='h2l'){
-         mensClothingData.sort((a,b)=>{
-              return b.price - a.price;
-          })
-          mensDatashow(mensClothingData)
-      }
-      else if(sorting=='l2h'){
-         mensClothingData.sort(function (a,b){
-              return a.price - b.price;
-          })
-          mensDatashow(mensClothingData)
-      }
+//  ------------Sort Function--------------
    
-   });
-  
-
+ 
