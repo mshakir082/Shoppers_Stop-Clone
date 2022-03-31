@@ -1,3 +1,4 @@
+
 //   -----------------------------homepage Data----------------------------------------------------
 var homepageData=[
     {
@@ -32,6 +33,7 @@ var homepageData=[
     },
   ];
   localStorage.setItem("homeData",JSON.stringify(homepageData));
+
 
 // //   -----------------------------MenOneClick Data----------------------------------------------------
 // var homepageData=[
@@ -342,3 +344,6 @@ var homepageData=[
 //         price:"",
 //     },
 //   ];
+
+ 
+

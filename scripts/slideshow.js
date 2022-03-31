@@ -15,16 +15,11 @@ const slideImagfun=(images,slideshow)=>{
     slideshow.append(img)
     }, 2000);
  }
-//  slideImagfun(images)
 
-
-
-// let homeData=JSON.parse(localStorage.getItem("homeData"));
-// console.log(homeData);
 
 const homeDatashow=(homeData,AppendDiv)=>{
 
-   homeData.forEach(({image_url, name, decs,  price})=>{
+  homeData.forEach(({image_url, name, decs,  price})=>{
 
       
       let rowDiv=document.createElement("div");
@@ -40,9 +35,13 @@ const homeDatashow=(homeData,AppendDiv)=>{
          descriptions.innerText=decs;
 
          let priceTag = document.createElement("h4");
+
          priceTag.setAttribute("style","color:black;")
          priceTag.innerText=`Rs.${price}`
          console.log(price)
+
+         priceTag.innerText=`Rs.${price}`;
+
 
          let but= document.createElement("button");
          but.innerText=`Add To Bag`;
@@ -50,10 +49,13 @@ const homeDatashow=(homeData,AppendDiv)=>{
 
          let hrTag= document.createElement("hr");
          hrTag.id="hrTag"
-      //
+
          rowDiv.append(img,Title,descriptions,priceTag,but,hrTag);
          AppendDiv.append(rowDiv);
    })
 }
 
 export {slideImagfun,homeDatashow}
+
+      
+ 
