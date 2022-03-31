@@ -1,0 +1,99 @@
+.accordin{
+    width: 250px;
+    /* border:1px solid black; */
+}
+
+
+
+.accordin .contentBx{
+    
+    position: relative;
+    margin: 10px 20px;
+    font-family: sans-serif;
+    font-size: 13px;
+    line-height: 19px;
+    /* color: rgb(88, 86, 86); */
+    
+}
+
+
+.accordin .contentBx .label{
+    position: relative;
+    padding: 3px;
+    /* background: rgb(255, 255, 255); */
+    color: rgb(5, 6, 7);
+    cursor: pointer;
+    
+}
+.accordin .contentBx .label::before{
+    content: '⋁';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.15em;
+    
+
+}
+.accordin .contentBx.active .label::before{
+    content: '⋀';
+}
+.accordin .contentBx .content{
+    position: relative;
+    background: white;
+    height: 0;
+    overflow: hidden;
+    transition: 0.4s;
+    overflow-y: auto;
+    text-align:justify ;
+    padding: 0px 10px;
+ 
+    
+    
+   
+}
+.accordin .contentBx.active .content{
+    height: 200px;
+    padding: 10px;
+    margin-bottom: 10px;
+   
+}
+
+
+.leftsort{
+
+    display: flex;
+    justify-content :left;
+    gap:5px;
+    margin-top: 10px;
+
+}
+
+
+
+
+
+
+
+
+
+.accordin .contentBx .content1{
+    position: relative;
+    background: white;
+    height: 0;
+    overflow: hidden;
+    transition: 0.4s;
+    overflow-y: auto;
+    text-align:justify ;
+    padding: 0px 10px;
+ 
+    
+    
+   
+}
+.accordin .contentBx.active .content1{
+    height: 320px;
+    padding: 10px;
+    margin-bottom: 10px;
+   
+}

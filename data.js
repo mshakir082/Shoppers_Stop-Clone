@@ -10,6 +10,8 @@ let impressions= [
         'category': "A107040",
         'categoryName': "Rectangle",
         'variant': "No Colour",
+        strike:"₹2950",
+        percent:"56% off",
 
         image:'https://sslimages.shoppersstop.com/B8AC9759D45547D9AEF177F0DE13B7C8/img/638C21AD312643CE8A9BC6FB22C1B0E3/203050084_9999_638C21AD312643CE8A9BC6FB22C1B0E3.jpg',
 
@@ -35,6 +37,9 @@ let impressions= [
         image: "https://sslimages.shoppersstop.com/sys-master/images/h22/h8b/15792917151774/206011200_UNMAPPED.jpg_230Wx334H"  ,
         
             'list': "Category Page",
+
+        strike:"",
+        percent:"",
          
 
         'position': '2'
@@ -56,7 +61,8 @@ let impressions= [
         image: "https://sslimages.shoppersstop.com/sys-master/images/hb6/hfa/12905872818206/203654243_9999.jpg_230Wx334H"  ,
             'list': "Category Page",
          
-
+            strike:"₹7900",
+            percent:"40% off",
         'position': '3'
 
     }
@@ -75,7 +81,8 @@ let impressions= [
 
         image: "https://sslimages.shoppersstop.com/sys-master/images/h21/h67/26741529411614/IDS2755C1SG_NoColour.jpg_230Wx334H"  ,
             'list': "Category Page",
-         
+            strike:"",
+            percent:"",
 
         'position': '4'
 
@@ -95,7 +102,8 @@ let impressions= [
 
         image: "https://sslimages.shoppersstop.com/sys-master/images/hcb/he6/26599874953246/NRB21911321R554_NoColour.jpg_230Wx334H"  ,
             'list': "Category Page",
-         
+            strike:"",
+            percent:"",
 
         'position': '5'
 
@@ -115,7 +123,8 @@ let impressions= [
         image: "https://sslimages.shoppersstop.com/sys-master/images/h13/hce/26938498285598/OP1899C02_NoColour.jpg_230Wx334H"  ,
         
             'list': "Category Page",
-         
+            strike:"",
+            percent:"",
 
         'position': '6'
 
@@ -136,7 +145,8 @@ let impressions= [
         image: "https://sslimages.shoppersstop.com/sys-master/images/hc4/h11/26938637942814/OP1899C03_NoColour.jpg_230Wx334H"  ,
             'list': "Category Page",
          
-
+            strike:"",
+            percent:"",
         'position': '7'
 
     }
@@ -156,7 +166,8 @@ let impressions= [
         
             'list': "Category Page",
          
-
+            strike:"",
+            percent:"",
         'position': '8'
 
     }
@@ -176,7 +187,8 @@ let impressions= [
         
             'list': "Category Page",
          
-
+            strike:"₹4490",
+            percent:"50%off",
         'position': '9'
 
     }
@@ -196,7 +208,8 @@ let impressions= [
         
             'list': "Category Page",
          
-
+            strike:"",
+            percent:"",
         'position': '10'
 
     }
@@ -216,7 +229,8 @@ let impressions= [
         
             'list': "Category Page",
          
-
+            strike:"₹1790",
+            percent:"50% off",
         'position': '11'
 
     }
@@ -236,7 +250,8 @@ let impressions= [
         
             'list': "Category Page",
          
-
+            strike:"",
+            percent:"",
         'position': '12'
 
     }
@@ -255,7 +270,8 @@ let impressions= [
         image: "https://sslimages.shoppersstop.com/sys-master/images/hfb/h08/26741594030110/IDS2751C3SG_NoColour.jpg_230Wx334H"  ,
         
             'list': "Category Page",
-         
+            strike:"",
+            percent:"",
 
         'position': '13'
 
@@ -276,7 +292,8 @@ let impressions= [
         image: "https://sslimages.shoppersstop.com/sys-master/images/h1b/h22/16909449658398/NR4349I6018G56_NoColour.jpg_230Wx334H"  ,
             'list': "Category Page",
          
-
+            strike:"",
+            percent:"",
         'position': '14'
 
     }
@@ -295,7 +312,8 @@ let impressions= [
         image: "https://sslimages.shoppersstop.com/sys-master/images/h08/h88/16858994409502/NIDS2666C2SG_NoColour.jpg_230Wx334H"  ,
         
             'list': "Category Page",
-         
+            strike:"",
+            percent:"",
 
         'position': '15'
 
@@ -315,7 +333,8 @@ let impressions= [
 
         image: "https://sslimages.shoppersstop.com/sys-master/images/h80/h61/13286741770270/205508838_9999.jpg_230Wx334H"  ,
             'list': "Category Page",
-         
+            strike:"₹1390",
+            percent:"50%0ff",
 
         'position': '16'
 
@@ -336,7 +355,8 @@ let impressions= [
         image: "https://sslimages.shoppersstop.com/sys-master/images/h32/hf9/12939617796126/205496705_9999.jpg_230Wx334H"  ,
             'list': "Category Page",
          
-
+            strike:"₹2490",
+            percent:"60% off",
         'position': '17'
 
     }
@@ -356,7 +376,8 @@ let impressions= [
         
             'list': "Category Page",
          
-
+            strike:"₹4490",
+            percent:"50% off",
         'position': '18'
 
     }
@@ -376,7 +397,8 @@ let impressions= [
         image:   "https://sslimages.shoppersstop.com/sys-master/images/h76/hed/26600632975390/NOO414241420158_NoColour.jpg_230Wx334H"  ,
             'list': "Category Page",
          
-
+            strike:"",
+            percent:"",
         'position': '19'
 
     }
@@ -396,7 +418,8 @@ let impressions= [
         
             'list': "Category Page",
          
-
+            strike:"₹4390",
+            percent:"60% off",
         'position': '20'
 
     }
@@ -418,7 +441,8 @@ let impressions= [
     image:   "https://sslimages.shoppersstop.com/sys-master/images/h1b/hef/16554413293598/201045914_base_NoColour.jpg_230Wx334H"  ,
             'list': "Category Page",
          
-
+            strike:"",
+            percent:"",
         'position': '1'
 
     }
@@ -438,7 +462,8 @@ let impressions= [
     image:   "https://sslimages.shoppersstop.com/B8AC9759D45547D9AEF177F0DE13B7C8/img/7A00EDC7985B479C9A0A024C6C071C6E/205359961_9999_7A00EDC7985B479C9A0A024C6C071C6E.jpg"  ,
         
             'list': "Category Page",
-         
+            strike:"",
+            percent:"",
 
         'position': '2'
 
@@ -459,7 +484,8 @@ let impressions= [
     image:   "https://sslimages.shoppersstop.com/sys-master/images/h28/hc4/13061716541470/205649063_9999.jpg_230Wx334H"  ,
         
             'list': "Category Page",
-         
+            strike:"₹3290",
+            percent:"50% off",
 
         'position': '3'
 
@@ -481,7 +507,8 @@ let impressions= [
     image:  "https://sslimages.shoppersstop.com/B8AC9759D45547D9AEF177F0DE13B7C8/img/A65564E366CA4523B0CED48D12B4A929/203338771_9999_A65564E366CA4523B0CED48D12B4A929.jpg"  , 
             'list': "Category Page",
          
-
+            strike:"",
+            percent:"",
         'position': '4'
 
     }
@@ -501,7 +528,8 @@ let impressions= [
 
     image: "https://sslimages.shoppersstop.com/sys-master/images/hbd/h76/26741375205406/IDS2755C2SG_NoColour.jpg_230Wx334H"  ,
             'list': "Category Page",
-         
+            strike:"₹5990",
+            percent:"20%off",
 
         'position': '5'
 
@@ -520,7 +548,8 @@ let impressions= [
         image: "https://sslimages.shoppersstop.com/sys-master/images/h51/h32/13802179559454/206260181_9999.jpg_230Wx334H"  ,
         
             'list': "Category Page",
-         
+            strike:"",
+            percent:"",
 
         'position': '10'
 
@@ -541,7 +570,8 @@ let impressions= [
         
             'list': "Category Page",
          
-
+            strike:"",
+            percent:"",
         'position': '11'
 
     }
@@ -560,7 +590,8 @@ let impressions= [
         image: "https://sslimages.shoppersstop.com/sys-master/images/h4b/he2/15792897851422/206780673_UNMAPPED.jpg_230Wx334H"  ,
         
             'list': "Category Page",
-         
+            strike:"",
+            percent:"",
 
         'position': '12'
 
@@ -580,7 +611,8 @@ let impressions= [
         image: "https://sslimages.shoppersstop.com/sys-master/images/hfb/h08/26741594030110/IDS2751C3SG_NoColour.jpg_230Wx334H"  ,
         
             'list': "Category Page",
-         
+            strike:"",
+            percent:"",
 
         'position': '13'
 
@@ -600,7 +632,8 @@ let impressions= [
 
         image: "https://sslimages.shoppersstop.com/sys-master/images/h1b/h22/16909449658398/NR4349I6018G56_NoColour.jpg_230Wx334H"  ,
             'list': "Category Page",
-         
+            strike:"",
+            percent:"",
 
         'position': '14'
 
@@ -620,7 +653,8 @@ let impressions= [
         image: "https://sslimages.shoppersstop.com/sys-master/images/h08/h88/16858994409502/NIDS2666C2SG_NoColour.jpg_230Wx334H"  ,
         
             'list': "Category Page",
-         
+            strike:"",
+            percent:"",
 
         'position': '15'
 
@@ -641,7 +675,8 @@ let impressions= [
         image: "https://sslimages.shoppersstop.com/sys-master/images/h80/h61/13286741770270/205508838_9999.jpg_230Wx334H"  ,
             'list': "Category Page",
          
-
+            strike:"",
+            percent:"",
         'position': '16'
 
     }
@@ -659,7 +694,8 @@ let impressions= [
 
         image: "https://sslimages.shoppersstop.com/sys-master/images/h32/hf9/12939617796126/205496705_9999.jpg_230Wx334H"  ,
             'list': "Category Page",
-         
+            strike:"",
+            percent:"",
 
         'position': '17'
 
@@ -680,7 +716,8 @@ let impressions= [
         
             'list': "Category Page",
          
-
+            strike:"",
+            percent:"",
         'position': '18'
 
     }
@@ -700,7 +737,8 @@ let impressions= [
         image:   "https://sslimages.shoppersstop.com/sys-master/images/h76/hed/26600632975390/NOO414241420158_NoColour.jpg_230Wx334H"  ,
             'list': "Category Page",
          
-
+            strike:"",
+            percent:"",
         'position': '19'
 
     }
@@ -719,7 +757,8 @@ let impressions= [
         image:   "https://sslimages.shoppersstop.com/sys-master/images/hc1/h27/15020044124190/206761694_UNMAPPED.jpg_230Wx334H"  ,
         
             'list': "Category Page",
-         
+            strike:"",
+            percent:"",
 
         'position': '20'
 
@@ -741,7 +780,8 @@ let impressions= [
 
     image:   "https://sslimages.shoppersstop.com/sys-master/images/h1b/hef/16554413293598/201045914_base_NoColour.jpg_230Wx334H"  ,
             'list': "Category Page",
-         
+            strike:"",
+            percent:"",
 
         'position': '1'
 
@@ -763,7 +803,8 @@ let impressions= [
         
             'list': "Category Page",
          
-
+            strike:"",
+            percent:"",
         'position': '2'
 
     }
