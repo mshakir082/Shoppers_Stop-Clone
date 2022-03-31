@@ -18,27 +18,25 @@ const slideImagfun=(images,slideshow)=>{
     slideshow.append(img)
     }, 2000);
  }
-//  slideImagfun(images)
 
 
-const mensDatashow=(mensClothingData)=>{
+
+
+const mensDatashow=(data,appendDiv)=>{
    
-  document.getElementById("main").innerHTML=null
-    mensClothingData.forEach(({image_url, name, decs,  price, strike_price, offer})=>{
+      appendDiv.innerHTML=null
 
-      
-      let rowDiv=document.createElement("div");
+data.forEach(({image_url, name, decs,  price, strike_price, offer})=>{
+
+
+        let rowDiv=document.createElement("div");
          rowDiv.id="homeDataRowDiv";
-
-         
 
          let img=document.createElement("img");
          img.src=image_url;
 
          let Title = document.createElement("h3");
          Title.innerText=name;
-         
-         
 
          let descriptions= document.createElement("p");
          descriptions.innerText=decs;
@@ -60,9 +58,6 @@ const mensDatashow=(mensClothingData)=>{
          
          priceTag2.innerText=`₹${strike_price}`;
          priceTag2.id="priceTag2"
-         
-
-      }
 
 
          let priceOffer = document.createElement("h5");
@@ -83,7 +78,9 @@ const mensDatashow=(mensClothingData)=>{
          
          priceDiv.append(priceTag,priceTag2,priceOffer)
          rowDiv.append(img,Title,descriptions ,priceDiv);
-     append(rowDiv);
+
+         appendDiv.append(rowDiv);
+
    })
 }
 export  {slideImagfun,mensDatashow} 

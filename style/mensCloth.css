@@ -1,0 +1,101 @@
+#container{
+    display: flex;
+    /* border: 1px solid black; */
+    width: 95%;
+    /* height: 500px; */
+    margin: auto;
+}
+#heading-option{
+ display: flex;
+ width: 67%;
+ justify-content: space-between;
+ margin-left: 390px;
+}
+#mensHeading{
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+    margin-top :50px;
+}
+#sorter{
+    height: 30px;
+    width: 220px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    background-color:white;
+    color: black;
+
+}
+#checkboxes{
+    width: 25%;
+    /* border: 1px solid red; */
+}
+#main{
+    width: 75%;
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:15px;
+    /* padding: 10px; */
+    font-family: sans-serif;
+}
+#main>div{
+  /* border: 1px solid red; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#homeDataRowDiv>img{
+         width: 100%;
+         height: 70%;
+        
+     }
+     #homeDataRowDiv{
+         height: 350px;
+     }
+     #butAddToBag{
+         border:none;
+          color:black;
+          font-size:14px;
+          font-weight:bold;
+          margin-left:58px;
+          background: white;
+          margin-bottom: -20px;
+          margin-top: -10px;
+      }
+      #hrTag{
+          width:45%;
+         margin:auto;
+         margin-bottom: 10px;
+         font-family:bold;  
+         color:black;  
+      }
+      #priceTag2{
+          text-decoration: line-through;
+      }
+      #priceTag{
+       margin-left: 15px;
+      
+      }
+      #priceDiv{
+          width: 100%;;
+          /* height: 100px; */
+          /* border: 1px solid black; */
+          display: flex;
+          margin-top: 10px;
+          gap: 10px;
+      }
+   
+      #offers{
+          color: red;
+      }
+      #homeDataRowDiv>h3{
+          text-align: left;
+          margin-top: 3px;
+          margin-left: 10px;
+      }
+      #desc{
+          text-align: left;
+          margin-left: 10px;
+          margin-top: 10px;
+          color: gray;
+      }
+   

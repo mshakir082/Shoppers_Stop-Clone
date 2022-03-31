@@ -4,11 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Men Clothing Page</title>
+    <link rel="stylesheet" href="./style/CheckBarSlider.css">
+    <link rel="stylesheet" href="./style/mensCloth.css">
+    <link rel="stylesheet" href="./style/navbar.css">
+    <link rel="stylesheet" href="./style/footerBar.css">
+    <script src="https://kit.fontawesome.com/088bab0eb4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="header"></div>
+
+
+
     <title>Document</title>
     <link rel="stylesheet" href="./style/CheckBarSlider.css">
   <link rel="stylesheet" href="./style/mensCloth.css">
 </head>
 <body>
+
     <div id="slideshow"></div>
   
     <div id="heading-option">
@@ -322,6 +336,22 @@
         <div id="main"></div>
     </div>
 
+<div id="footerbar"></div>
+</body>
+</html>
+
+<script type="module">
+ let mensClothingData=JSON.parse(localStorage.getItem("mensCotheData")) ;
+ 
+ //  Import Navbar Section-------
+
+ import navbar from "./scripts/navbar.js"
+    var header=document.querySelector(".header")
+    header.innerHTML=navbar()
+
+import {slideImagfun,mensDatashow}  from "./scripts/mensClothe.js"
+=======
+
 </body>
 </html>
 
@@ -329,10 +359,11 @@
 
        
 
-        <script type="module">
+   <script type="module">
  let mensClothingData=JSON.parse(localStorage.getItem("mensCotheData")) ;
  
 import slideImagfun from "./scripts/mensClothe.js"
+
 let slideshow1 = document.getElementById("slideshow");
 
 let images = ["https://cdn.dynamicyield.com/api/8770829/images/1679f7f8c71c6__TSHIRT--web--01.jpg",
@@ -343,9 +374,16 @@ let images = ["https://cdn.dynamicyield.com/api/8770829/images/1679f7f8c71c6__TS
 slideImagfun(images,slideshow1);
 
 
+let menDetailAppent=document.getElementById("main");
 
+mensDatashow(mensClothingData,menDetailAppent)
+
+// footer bar import-------
+import {footerbar} from "./scripts/footer.js"
+let footer= document.getElementById("footerbar");
+footer.innerHTML=footerbar();
 
 
 </script>
-<script src="./scripts/mensClothe.js"></script>
+
 <script src="./data/data.js"></script>
