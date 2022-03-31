@@ -1,18 +1,21 @@
 #main{
-    display: flex;justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 #corner{
-    width:23%;
-    border-bottom: 1px solid black;
+    width:90%;
+    /* border-bottom: 1px solid black; */
     gap: 15px;
-    margin-left: 60px;
+    margin-left: 15px;
 }
-#corner>h3{
+#corner>h4{
     width: auto;
     text-align: left;
     color: #000;
     background-color: #fff;
-    margin-top: 30px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
     
 }
 
@@ -29,11 +32,67 @@
     padding: 2%;
 }
 #leftsort>input{
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    
+}
+
+.divColors{
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    }
+    #red{
+        background-color: red;
+    }
+    #green{
+        background-color: green;
+    }
+    #black{
+        background-color: black;
+    }
+    #yellow{
+        background-color: yellow;
+    }
+    #grey{
+        background-color: gray;
+    }
+    #white{
+        border: 1px solid gray;
+    }
+    #pink{
+        background-color: pink;
+    }
+    #purple{
+        background-color: purple;
+    }
+    #orange{
+        background-color: orange;
+    }
+    #brown{
+        background-color: brown;
+    }
+    #blue{
+        background-color: blue;
+    }
+    #begie{
+        background-color: beige;
+    }
+    #multi{
+        background-color: mediumslateblue;
+    }
+
+.deliveryDIv{
     height: 20px;
-    width: 20px;
 }
 #leftsort>div{
-    font-size: 20px;
+    font-size: 13px;
+    font-family: sans-serif;
+    cursor: pointer;
 }
 #right{
     width: 80%;
@@ -93,5 +152,33 @@ img{
     font-family: "lato Bold",Helvetica,Arial,sans-serif;font-size: 14px;line-height: 1.53;color: #000;font-weight: 700;letter-spacing: .2px;text-transform: none;margin-top: 30px;
 }
 button{
-    font-family: "lato regular",Helvetica,Arial,sans-serif;font-size: 14px;line-height: 1.2;color: #000;font-weight: 400;letter-spacing: 0;text-transform: none;box-sizing: border-box;background-color: #222;color: #fff;border-width: 2px;border-style: solid;border-color: #222;border-radius: 1px;display: inline-block;text-decoration: none;transition: background-color .2s;padding: 9.6px 32px;cursor: pointer;text-align: center;text-transform: uppercase;box-sizing: border-box;display: block;width:95%;margin-top: 30px;
+    font-family: "lato regular",Helvetica,Arial,sans-serif;font-size: 14px;line-height: 1.2;color: #000;font-weight: 400;letter-spacing: 0;text-transform: none;box-sizing: border-box;background-color: #222;color: #fff;border-width: 2px;border-style: solid;border-color: #222;border-radius: 1px;display: inline-block;text-decoration: none;transition: background-color .2s;padding: 9.6px 32px;cursor: pointer;text-align: center;text-transform: uppercase;box-sizing: border-box;display: block;width:100%;margin-top: 30px;
+}
+
+#priceRange{
+    display: flex;
+    justify-content: space-between;
+  
+    width: 70%;
+   
+    /* border:1px solid black */
+   
+    }
+#priceRange>input{
+    width: 30%;
+    height: 30px;
+    border:1px solid black;
+    font-size: 18px;
+    text-align: left;
+     padding: 5px;
+     margin-left: 10px;
+     cursor: pointer;
+}
+#pricePara{
+    font-size: 18;
+    color: gray;
+    text-align: left;
+    margin-left: 10px;
+    margin-right: 1px;
+    font-family: sans-serif;
 }

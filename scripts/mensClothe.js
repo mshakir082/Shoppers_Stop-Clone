@@ -21,14 +21,15 @@ const slideImagfun=(images,slideshow)=>{
 
 
 
+
 const mensDatashow=(data,appendDiv)=>{
    
-  document.getElementById("main").innerHTML=null
+      appendDiv.innerHTML=null
 
-    data.forEach(({image_url, name, decs,  price, strike_price, offer})=>{
+data.forEach(({image_url, name, decs,  price, strike_price, offer})=>{
 
-      
-      let rowDiv=document.createElement("div");
+
+        let rowDiv=document.createElement("div");
          rowDiv.id="homeDataRowDiv";
 
          let img=document.createElement("img");
@@ -36,7 +37,7 @@ const mensDatashow=(data,appendDiv)=>{
 
          let Title = document.createElement("h3");
          Title.innerText=name;
-         
+
          let descriptions= document.createElement("p");
          descriptions.innerText=decs;
          descriptions.id="desc";
@@ -57,7 +58,6 @@ const mensDatashow=(data,appendDiv)=>{
          
          priceTag2.innerText=`₹${strike_price}`;
          priceTag2.id="priceTag2"
-         }
 
 
          let priceOffer = document.createElement("h5");
@@ -78,7 +78,9 @@ const mensDatashow=(data,appendDiv)=>{
          
          priceDiv.append(priceTag,priceTag2,priceOffer)
          rowDiv.append(img,Title,descriptions ,priceDiv);
+
          appendDiv.append(rowDiv);
+
    })
 }
 export  {slideImagfun,mensDatashow} 
