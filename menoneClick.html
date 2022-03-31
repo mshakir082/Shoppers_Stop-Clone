@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/slideShowHome.css">
+    <title>Men Page</title>
+    <style>
+        #slideshow2{
+            margin-top:20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Frist-slidershow -->
+    <div id="slideshow"></div>
+    <!-- Popular At Shoppers -->
+    <div id="handPickedMain">
+        <div id="handPickedTitile">Popular At Shoppers</div>
+        <div id="handPickeddetal"></div>
+    </div>
+    <h2 style="margin:35px;font-size:30px;">Shop By Category</h2> 
+    <div class="staticMenonclic">
+        
+        <img src="https://sslimages.shoppersstop.com/sys-master/root/h5d/h95/27236608081950/web_men-shirts_shop-by-categories_20220314.jpg">
+        <img src="https://sslimages.shoppersstop.com/sys-master/root/h5f/h92/27236608147486/web_men-jeans_shop-by-categories_20220314.jpg">
+        <img src="https://sslimages.shoppersstop.com/sys-master/root/hcf/h87/27236608475166/web_men-t-shirts_shop-by-categories_20220314.jpg">
+        <img src="https://sslimages.shoppersstop.com/sys-master/root/h22/h19/27294062673950/web_men_24-03-22BELTS-%26-WALLETS6widget.jpg">
+        <img src="https://sslimages.shoppersstop.com/sys-master/root/h4d/h8f/27236608213022/web_men_traousers_shop-by-categories_20220314.jpg">
+        <img src="https://sslimages.shoppersstop.com/sys-master/root/h32/h1f/27294062805022/web_men_footwears_po6_20220324.jpg">
+    </div>
+   
+    <div ><img style="width:100%; margin-top:45px;" src="https://sslimages.shoppersstop.com/sys-master/root/h95/hc7/27300373823518/office-24-03-22new-brands_hom-greboot_strip_web.jpg" class="dtweb" alt=""></div>
+    <div id="slideshow2"></div>
+
+    <div id="slideshowbelowImg"><img src="https://sslimages.shoppersstop.com/sys-master/root/h55/h9d/27236614373406/SS22-Trends_strip_web.jpg"></img></div>
+    
+    
+    <div id="slideshowbelowImg"><img src="https://cdn.dynamicyield.com/api/8770829/images/37ee83e705000__peronalised-banner-beauty-web.jpg" class="dtweb" alt=""></div>
+    <div id="slideshowbelowImg"><img src="https://sslimages.shoppersstop.com/sys-master/root/he8/hee/27287372562462/Bargains-Of-the-Day-Strip-Web_20220323.jpg" class="dtweb" alt=""></div>
+    <div id="slideshow3"></div>
+   
+    
+    <div id="slideshowbelowImg"><img src="https://sslimages.shoppersstop.com/sys-master/root/ha7/hf2/27287372693534/Featured-Categories-Strip-Web_20220323.jpg" class="dtweb" alt=""></div>
+    <div class="staticDivfour">
+        <img src="https://sslimages.shoppersstop.com/sys-master/root/h90/h71/27279439921182/kids-wear-4-widget-web--2022-03-22revised-feauture-brands.jpg">
+        <img src="https://sslimages.shoppersstop.com/sys-master/root/h3e/h72/27279439986718/Frages--web--feauture-brand-revise-202-3-22.jpg">
+        <img src="https://sslimages.shoppersstop.com/sys-master/root/he0/hef/27287356375070/Sunglasses-4-widget-web.jpg">
+        <img src="https://sslimages.shoppersstop.com/sys-master/root/hf1/hf2/27287356440606/handbag-4-widget-web.jpg">
+    </div>
+    <div id="slideshowbelowImg"><img src="https://sslimages.shoppersstop.com/sys-master/root/hd1/h1c/27269478907934/hello-new_strip_Web.jpg" class="dtweb" alt=""></div>
+    <div id="slideshow4"></div>
+    <div id="slideshowbelowImg"><img src=" https://sslimages.shoppersstop.com/sys-master/root/hc9/h87/27287376101406/Brands-To-Bag-Strip-Web_20220324.jpg" class="dtweb" alt=""></div>
+   
+    <div class="staticDivfour">
+        <img src="https://sslimages.shoppersstop.com/sys-master/root/hf3/h75/27279429238814/selected-4-widget-web.jpg">
+        <img src="https://sslimages.shoppersstop.com/sys-master/root/hb2/h79/27279429107742/Daniel-wellington-4-widget-web.jpg">
+        <img src="https://sslimages.shoppersstop.com/sys-master/root/heb/hce/27279428714526/levis-4-widget-web.jpg">
+        <img src="https://sslimages.shoppersstop.com/sys-master/root/h1a/hc8/27279428911134/Tommy-4-widget-web.jpg">
+    </div>
+    <div id="slideshowbelowImg"><img src="https://sslimages.shoppersstop.com/sys-master/root/hb3/he0/27330024603678/web_hp_Summer-getaway-with-your-gang-Strip_20220329.jpg" class="dtweb" alt=""></div>
+    <div id="slideshowbelowImg"><img src="https://sslimages.shoppersstop.com/sys-master/root/ha4/hb2/27330023555102/web_summer-style-edit_resort-wear_20220329.jpg" class="dtweb" alt=""></div>
+    
+</body>
+</html>
+<script type="module">
+    let menclickDatA=JSON.parse(localStorage.getItem("MenOnclickData"));
+    import {slideImagfun,homeDatashow} from "./scripts/slideshow.js"
+    
+    let slideshow1 = document.getElementById("slideshow");
+    let slideshow2 = document.getElementById("slideshow2");    
+    let slideshow3 = document.getElementById("slideshow3");
+    let slideshow4 = document.getElementById("slideshow4");
+    let images = ["https://sslimages.shoppersstop.com/sys-master/root/h2d/hb2/27309550043166/web_men_allen-solly-paidbanner_25-03-2022.jpg","https://sslimages.shoppersstop.com/sys-master/root/hf7/h21/27236609327134/web_men_calvin-klein_main-carousel_20220314.jpg","https://sslimages.shoppersstop.com/sys-master/root/hae/h23/27303500513310/1840x600_1_new-web_meng_2022-03-25revised.jpg","https://sslimages.shoppersstop.com/sys-master/root/ha1/hff/27236610670622/web_men_tommy-hilfiger_main-carousel_20220314.jpg","https://sslimages.shoppersstop.com/sys-master/root/h92/hf9/27236610801694/web_men_superdry_main-carousel_20220314.jpg","https://sslimages.shoppersstop.com/sys-master/root/ha9/ha6/27236611194910/web_men_nautica_main-carousel_20220314.jpg","https://sslimages.shoppersstop.com/sys-master/root/h1b/h99/27236611588126/web_men_u.s.p.a_main-carousel_20220314.jpg","https://sslimages.shoppersstop.com/sys-master/root/h0c/h93/27236611719198/web_men_louis-philippecarousal_main-carousel_20220314.jpg"];
+    let images2 = ["https://sslimages.shoppersstop.com/sys-master/root/h85/h2c/27312112926750/jackets_Web.jpg","https://sslimages.shoppersstop.com/sys-master/root/hf0/h44/27303486980126/web_hp_formal-shirts_office-reboot_20220324.jpg","https://sslimages.shoppersstop.com/sys-master/root/h88/h0c/27303487242270/web_hp_formal-shoes_office-reboot_20220324.jpg","https://sslimages.shoppersstop.com/sys-master/root/h48/h10/27303487373342/web_hp_watches_office-reboot_20220324.jpg"];
+    let images3 = ["https://sslimages.shoppersstop.com/sys-master/root/h35/h9a/27319649599518/web_hp_gini-%26-jony_bargain-of-the-day_20220328.jpg","https://sslimages.shoppersstop.com/sys-master/root/h05/ha1/27319649796126/web_hp_karrot_bargain-of-the-day_20220328.jpg"];
+    let images4 = ["https://sslimages.shoppersstop.com/sys-master/root/h34/hfa/27267213426718/web_hp_neemans_hello-new_20220321.jpg","https://sslimages.shoppersstop.com/sys-master/root/hf3/hfd/27267213557790/web_hp_gas_hello-new_20220321.jpg","https://sslimages.shoppersstop.com/sys-master/root/h9c/h6e/27279424978974/web_hp_solthreads_hello-new_20220322.jpg","https://sslimages.shoppersstop.com/sys-master/root/h5d/h18/27309548830750/web_hp_rare-rebbit_new-arrivals-static_20220321.jpg","https://sslimages.shoppersstop.com/sys-master/root/hd4/hf7/27267213852702/web_hp_luxie_hello-new_20220321.jpg"]
+
+    slideImagfun(images,slideshow1);
+    slideImagfun(images2,slideshow2)
+    slideImagfun(images3,slideshow3)
+    slideImagfun(images4,slideshow4)
+
+   let menAppdiv=document.getElementById("handPickeddetal");
+    homeDatashow(menclickDatA,menAppdiv)
+</script>
+<script src="./scripts/slideshow.js"></script>
+<script src="./data/data.js"></script>
