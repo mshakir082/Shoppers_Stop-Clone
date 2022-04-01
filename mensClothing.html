@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Men Clothing Page</title>
+    <title>Men's Clothing</title>
     <link rel="stylesheet" href="./style/CheckBarSlider.css">
     <link rel="stylesheet" href="./style/mensCloth.css">
     <link rel="stylesheet" href="./style/navbar.css">
@@ -52,7 +52,7 @@
     var header=document.getElementById("header")
     header.innerHTML=navbar();
  
-import {slideImagfun,mensDatashow} from "./scripts/mensClothe.js"
+import {slideImagfun,AppentDatashow} from "./scripts/appentDataShow.js"
 
 let slideshow1 = document.getElementById("slideshow");
 
@@ -66,7 +66,7 @@ slideImagfun(images,slideshow1);
 
 let menDetailAppent=document.getElementById("main");
 
-mensDatashow(mensClothingData,menDetailAppent)
+AppentDatashow(mensClothingData,menDetailAppent)
 
 // footer bar import-------
 import {footerbar} from "./scripts/footer.js"
@@ -82,13 +82,13 @@ document.getElementById("sorter").addEventListener("click",() =>{
          mensClothingData.sort((a,b)=>{
               return b.price - a.price;
           })
-          mensDatashow(mensClothingData,menDetailAppent)
+          AppentDatashow(mensClothingData,menDetailAppent)
       }
       else if(sorting=='l2h'){
          mensClothingData.sort(function (a,b){
               return a.price - b.price;
           })
-          mensDatashow(mensClothingData,menDetailAppent)
+          AppentDatashow(mensClothingData,menDetailAppent)
       }
    
    });
@@ -99,5 +99,5 @@ document.getElementById("sorter").addEventListener("click",() =>{
    checkbox1.innerHTML =checkbox();
 </script>
 
-<script src="./data/data.js"></script>
+<script src="./data/menClothData.js"></script>
 

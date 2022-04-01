@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./style/navbar.css">
     <link rel="stylesheet" href="./style/footerBar.css">
     <script src="https://kit.fontawesome.com/088bab0eb4.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>Kid's Footwears</title>
 </head>
 <body>
     
@@ -18,7 +18,7 @@
   
     <div id="heading-option">
         
-        <p id="mensHeading">Boys </p>
+        <p id="mensHeading">Kid's Footwears </p>
         
      <select  id="sorter">
         <option value="">SORT BY: POPULAR</option>
@@ -50,7 +50,7 @@ import navbar from "./scripts/navbar.js"
     var header=document.getElementById("header")
     header.innerHTML=navbar();
  
-import {slideImagfun,mensDatashow} from "./scripts/mensClothe.js"
+import {slideImagfun,AppentDatashow} from "./scripts/appentDataShow.js"
 
 let slideshow1 = document.getElementById("slideshow");
 
@@ -62,9 +62,9 @@ let images = ["https://cdn.dynamicyield.com/api/8770829/images/1dee030f3c39d__fe
 slideImagfun(images,slideshow1);
 
 
-let menDetailAppent=document.getElementById("main");
+let kidsfootwear= document.getElementById("main");
 
-mensDatashow(kidsFotwear,menDetailAppent)
+AppentDatashow(kidsFotwear,kidsfootwear)
 
 // footer bar import-------
 import {footerbar} from "./scripts/footer.js"
@@ -80,13 +80,13 @@ document.getElementById("sorter").addEventListener("click",() =>{
         kidsFotwear.sort((a,b)=>{
               return b.price - a.price;
           })
-          mensDatashow(kidsFotwear,menDetailAppent)
+          AppentDatashow(kidsFotwear,kidsfootwear)
       }
       else if(sorting=='l2h'){
         kidsFotwear.sort(function (a,b){
               return a.price - b.price;
           })
-          mensDatashow(kidsFotwear,menDetailAppent)
+          AppentDatashow(kidsFotwear,kidsfootwear)
       }
    
    });
@@ -98,4 +98,4 @@ document.getElementById("sorter").addEventListener("click",() =>{
 
 </script>
 
-<script src="./data/data.js"></script>
+<script src="./data/kidsFootwearData.js"></script>
