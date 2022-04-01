@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+OCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Men's Clothing</title>
+    <title>women watch page</title>
     <link rel="stylesheet" href="./style/CheckBarSlider.css">
     <link rel="stylesheet" href="./style/mensCloth.css">
     <link rel="stylesheet" href="./style/navbar.css">
@@ -18,7 +18,7 @@
   
     <div id="heading-option">
         
-        <p id="mensHeading">Men's Clothing</p>
+        <p id="mensHeading">women's watch</p>
         
      <select  id="sorter">
         <option value="">SORT BY: POPULAR</option>
@@ -45,7 +45,7 @@
 <script type="module">
 
 
- let mensClothingData=JSON.parse(localStorage.getItem("mensCotheData"));
+ let womenWatched=JSON.parse(localStorage.getItem("womenwatch"));
  //  Import Navbar Section-------
 
  import navbar from "./scripts/navbar.js"
@@ -64,9 +64,9 @@ let images = ["https://cdn.dynamicyield.com/api/8770829/images/1679f7f8c71c6__TS
 slideImagfun(images,slideshow1);
 
 
-let menDetailAppent=document.getElementById("main");
+let womenDivMAin=document.getElementById("main");
 
-AppentDatashow(mensClothingData,menDetailAppent)
+AppentDatashow(womenWatched,womenDivMAin)
 
 // footer bar import-------
 import {footerbar} from "./scripts/footer.js"
@@ -79,16 +79,16 @@ document.getElementById("sorter").addEventListener("click",() =>{
       var sorting=document.getElementById("sorter").value
       console.log(sorting)
       if(sorting=='h2l'){
-         mensClothingData.sort((a,b)=>{
+         womenWatched.sort((a,b)=>{
               return b.price - a.price;
           })
-          AppentDatashow(mensClothingData,menDetailAppent)
+          AppentDatashow(womenWatched,womenDivMAin)
       }
       else if(sorting=='l2h'){
-         mensClothingData.sort(function (a,b){
+         womenWatched.sort(function (a,b){
               return a.price - b.price;
           })
-          AppentDatashow(mensClothingData,menDetailAppent)
+          AppentDatashow(womenWatched,womenDivMAin)
       }
    
    });
@@ -99,5 +99,4 @@ document.getElementById("sorter").addEventListener("click",() =>{
    checkbox1.innerHTML =checkbox();
 </script>
 
-<script src="./data/menClothData.js"></script>
-
+<script src="./data/womenwatchdata.js"></script>

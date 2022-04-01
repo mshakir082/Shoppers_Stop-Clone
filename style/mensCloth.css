@@ -1,6 +1,5 @@
 #container{
     display: flex;
-   
     width: 95%;
     /* height: 500px; */
     margin: auto;
@@ -39,6 +38,7 @@
     /* border: 1px solid red; */
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
     gap:15px;
     padding: 10px;
    
@@ -46,6 +46,7 @@
 }
 #main>div{
   /* border: 1px solid red; */
+  height: auto;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 #homeDataRowDiv>img{

@@ -6,7 +6,7 @@
     /* border: 1px solid green; */
     margin-left: -5px;
     justify-content: space-between;
-   
+   margin-top: 25px;
   }
 
   #cart-name {
@@ -30,6 +30,7 @@
     border: 1px solid rgb(49, 48, 48);
     margin-left:25px;
     margin-bottom: 10px;
+    padding: 10px;
   }
   #price{
       margin-left:15px;
@@ -92,4 +93,35 @@
     border: none;
     cursor: pointer;
     margin-left:15px;
+  }
+ #total{
+   margin-top: 15px;
+   margin-left: 10px;
+ }
+ #items{
+  margin-top: 25px;
+  margin-left: 10px;
+  color: gray;
+ }
+ #pinCodeDiv{
+   /* border:1px solid red; */
+   width: 70%;
+   height: 100px;
+  background-color:#f3f3f3;
+ 
+  }
+  #pincode{
+    width: 30%;
+    height:20px;
+    margin-left: 15px;
+  }#check{
+    background-color: #fff2f0;
+    color: #ff784f;
+    width: 10%;
+    height:25px;
+    margin-left: -4px;
+    border: none
+  }
+  #pincode h5{
+    margin-top :10px;
   }

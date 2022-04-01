@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Men's Clothing</title>
+    <title>kid's watch page</title>
     <link rel="stylesheet" href="./style/CheckBarSlider.css">
     <link rel="stylesheet" href="./style/mensCloth.css">
     <link rel="stylesheet" href="./style/navbar.css">
@@ -18,7 +18,7 @@
   
     <div id="heading-option">
         
-        <p id="mensHeading">Men's Clothing</p>
+        <p id="mensHeading">kid's Clothes</p>
         
      <select  id="sorter">
         <option value="">SORT BY: POPULAR</option>
@@ -45,7 +45,7 @@
 <script type="module">
 
 
- let mensClothingData=JSON.parse(localStorage.getItem("mensCotheData"));
+ let kitsClothing=JSON.parse(localStorage.getItem("kidsclothdata"));
  //  Import Navbar Section-------
 
  import navbar from "./scripts/navbar.js"
@@ -64,9 +64,9 @@ let images = ["https://cdn.dynamicyield.com/api/8770829/images/1679f7f8c71c6__TS
 slideImagfun(images,slideshow1);
 
 
-let menDetailAppent=document.getElementById("main");
+let kitsDetails=document.getElementById("main");
 
-AppentDatashow(mensClothingData,menDetailAppent)
+AppentDatashow(kitsClothing,kitsDetails)
 
 // footer bar import-------
 import {footerbar} from "./scripts/footer.js"
@@ -79,16 +79,16 @@ document.getElementById("sorter").addEventListener("click",() =>{
       var sorting=document.getElementById("sorter").value
       console.log(sorting)
       if(sorting=='h2l'){
-         mensClothingData.sort((a,b)=>{
+        kitsClothing.sort((a,b)=>{
               return b.price - a.price;
           })
-          AppentDatashow(mensClothingData,menDetailAppent)
+          AppentDatashow(kitsClothing,kitsDetails)
       }
       else if(sorting=='l2h'){
-         mensClothingData.sort(function (a,b){
+        kitsClothing.sort(function (a,b){
               return a.price - b.price;
           })
-          AppentDatashow(mensClothingData,menDetailAppent)
+          AppentDatashow(kitsClothing,kitsDetails)
       }
    
    });
@@ -99,5 +99,4 @@ document.getElementById("sorter").addEventListener("click",() =>{
    checkbox1.innerHTML =checkbox();
 </script>
 
-<script src="./data/menClothData.js"></script>
-
+<script src="./data/kidsclothdata.js"></script>

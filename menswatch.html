@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Men's Clothing</title>
+    <title>Men watch Page</title>
     <link rel="stylesheet" href="./style/CheckBarSlider.css">
     <link rel="stylesheet" href="./style/mensCloth.css">
     <link rel="stylesheet" href="./style/navbar.css">
@@ -18,7 +18,7 @@
   
     <div id="heading-option">
         
-        <p id="mensHeading">Men's Clothing</p>
+        <p id="mensHeading">Men's watch</p>
         
      <select  id="sorter">
         <option value="">SORT BY: POPULAR</option>
@@ -45,7 +45,7 @@
 <script type="module">
 
 
- let mensClothingData=JSON.parse(localStorage.getItem("mensCotheData"));
+ let mensClothingData=JSON.parse(localStorage.getItem("menswatchdata"));
  //  Import Navbar Section-------
 
  import navbar from "./scripts/navbar.js"
@@ -99,5 +99,4 @@ document.getElementById("sorter").addEventListener("click",() =>{
    checkbox1.innerHTML =checkbox();
 </script>
 
-<script src="./data/menClothData.js"></script>
-
+<script src="./data/menwatchdata.js"></script>

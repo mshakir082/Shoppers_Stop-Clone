@@ -22,11 +22,11 @@ const slideImagfun=(images,slideshow)=>{
 
 
 
-const mensDatashow=(data,appendDiv)=>{
+const AppentDatashow=(data,appendDiv)=>{
    
       appendDiv.innerHTML=null
 
-data.forEach(({image_url, name, decs,  price, strike_price, offer})=>{
+data.forEach(({image_url, name, desc,  price, strike_price, offer})=>{
 
 
         let rowDiv=document.createElement("div");
@@ -39,7 +39,7 @@ data.forEach(({image_url, name, decs,  price, strike_price, offer})=>{
          Title.innerText=name;
 
          let descriptions= document.createElement("p");
-         descriptions.innerText=decs;
+         descriptions.innerText=desc;
          descriptions.id="desc";
 
 
@@ -48,6 +48,7 @@ data.forEach(({image_url, name, decs,  price, strike_price, offer})=>{
          priceTag.id="priceTag";
 
          let priceTag2 = document.createElement("h5");
+         
          if(strike_price == ""){
          
          priceTag2.innerText=`${strike_price}`;
@@ -84,7 +85,7 @@ data.forEach(({image_url, name, decs,  price, strike_price, offer})=>{
    });
 }
 
-export  {slideImagfun,mensDatashow} 
+export  {slideImagfun,AppentDatashow} 
 
 //  ------------Sort Function--------------
    
