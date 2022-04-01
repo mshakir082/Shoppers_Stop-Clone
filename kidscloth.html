@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>kid's watch page</title>
+    <title>kid's Clothes</title>
     <link rel="stylesheet" href="./style/CheckBarSlider.css">
     <link rel="stylesheet" href="./style/mensCloth.css">
     <link rel="stylesheet" href="./style/navbar.css">
@@ -18,6 +18,7 @@
   
     <div id="heading-option">
         
+
         <p id="mensHeading">kid's Clothes</p>
         
      <select  id="sorter">
@@ -45,13 +46,16 @@
 <script type="module">
 
 
+
  let kitsClothing=JSON.parse(localStorage.getItem("kidsclothdata"));
- //  Import Navbar Section-------
+
+//  Import Navbar Section-------
 
  import navbar from "./scripts/navbar.js"
     var header=document.getElementById("header")
     header.innerHTML=navbar();
  
+
 import {slideImagfun,AppentDatashow} from "./scripts/appentDataShow.js"
 
 let slideshow1 = document.getElementById("slideshow");
@@ -64,9 +68,14 @@ let images = ["https://cdn.dynamicyield.com/api/8770829/images/1679f7f8c71c6__TS
 slideImagfun(images,slideshow1);
 
 
+
 let kitsDetails=document.getElementById("main");
 
-AppentDatashow(kitsClothing,kitsDetails)
+AppentDatashow(kitsClothing,kitsDetails);
+let menDetailAppent=document.getElementById("main");
+
+mensDatashow(kitsClothing,kitsDetails)
+
 
 // footer bar import-------
 import {footerbar} from "./scripts/footer.js"
@@ -79,6 +88,7 @@ document.getElementById("sorter").addEventListener("click",() =>{
       var sorting=document.getElementById("sorter").value
       console.log(sorting)
       if(sorting=='h2l'){
+
         kitsClothing.sort((a,b)=>{
               return b.price - a.price;
           })
@@ -90,6 +100,7 @@ document.getElementById("sorter").addEventListener("click",() =>{
           })
           AppentDatashow(kitsClothing,kitsDetails)
       }
+    
    
    });
 
@@ -98,5 +109,6 @@ document.getElementById("sorter").addEventListener("click",() =>{
    let checkbox1= document.getElementById("inner");
    checkbox1.innerHTML =checkbox();
 </script>
-
 <script src="./data/kidsclothdata.js"></script>
+
+

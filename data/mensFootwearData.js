@@ -312,7 +312,9 @@
                 offer:"35% off"
             },
 
+
         ];
         localStorage.setItem("mensFootwear",JSON.stringify(mensFootwearData));
+
 
 
