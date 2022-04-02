@@ -1,320 +1,231 @@
 
  var mensFootwearData=[
-            {
-                image_url:"https://sslimages.shoppersstop.com/sys-master/images/h51/h17/13953655472158/206221825_9212.jpg_230Wx334H",
-                name:"Adidas",
-                desc:"VS PACE Men Lace Up Sneakers - Black",
-                price:"2299",
-                strike_price:"4599",
-                offer:"50% off"
-            },
-            {
-                image_url:"https://sslimages.shoppersstop.com/sys-master/images/h76/h89/17291056775198/FM-LC1964B-BK_BLACK.jpg_230Wx334H",
-                name:"Lee Cooper",
-                desc:"Leather Regular Lace Up Mens Formal Shoes",
-                price:"1199",
-                strike_price:"1999",
-                offer:"40% off"
-            },
-            {
-                image_url:"https://sslimages.shoppersstop.com/sys-master/images/hbe/hda/16864024166430/S21JJ2311150-WH_WHITE.jpg_230Wx334H",
-                name:"Jack And Jones",
-                desc:"Pu Regular Lace Up Mens Sneakers",
-                price:"3999",
-                strike_price:"",
-                offer:""
-            },
-            {
-                image_url:"https://sslimages.shoppersstop.com/sys-master/images/hcc/hf5/26983561625630/FMPU37628904_WHITE.jpg_230Wx334H",
-                name:"Puma",
-                desc:"Textile Regular Lace Up Mens Sport Shoes",
-                price:"5999",
-                strike_price:"",
-                offer:""
-            },
-            {
-                image_url:"https://sslimages.shoppersstop.com/sys-master/images/h9f/h92/17523665076254/206480869_BLACK.jpg_230Wx334H",
-                name:"Puma",
-                desc:"Mesh Regular Lace Up Mens Sports Shoes",
-                price:"6999",
-                strike_price:"",
-                offer:""
-            },
-            {
-                image_url:"https://sslimages.shoppersstop.com/sys-master/images/hf9/h89/26775626579998/FMPU30692301-BK_BLACK.jpg_230Wx334H",
-                name:"Puma",
-                desc:"Textile Low Boot Laces Unisex Sports Shoes",
-                price:"8999",
-                strike_price:"",
-                offer:""
-            },
-            {
-                image_url:"https://sslimages.shoppersstop.com/sys-master/images/h97/h38/26983628734494/FMPU38621201_WHITE.jpg_230Wx334H",
-                name:"Puma",
-                desc:"Synthetic Leather Mid Top Lace Up Mens Sport Shoes",
-                price:"5999",
-                strike_price:"",
-                offer:""
-            },
-            {
-                image_url:"https://sslimages.shoppersstop.com/sys-master/images/h70/h70/16496023568414/FMEP-5925BLA-BK_BLACK.jpg_230Wx334H",
-                name:"El Paso",
-                desc:"Synthetic Leather Regular Slip On Mens Sandals",
-                price:"973",
-                strike_price:"3895",
-                offer:"75% off"
-            },
-            {
-                image_url:"https://sslimages.shoppersstop.com/sys-master/images/h91/hd0/17290726408222/FM-LC3391A-GN_GREEN.jpg_230Wx334H",
-                name:"Lee Cooper",
-                desc:"Leather Regular Slip On Mens Formal Shoes",
-                price:"1499",
-                strike_price:"2599",
-                offer:"40% off"
-            },
-            {
-                image_url:"https://sslimages.shoppersstop.com/sys-master/images/h28/hfc/26769975083038/FMJJ190180005GN_GREEN.jpg_230Wx334H",
-                name:"Jack And Jones",
-                desc:"Suede Regular Slip On Mens Loafers",
-                price:"2999",
-                strike_price:"",
-                offer:""
-            },
-            {
-                image_url:"https://sslimages.shoppersstop.com/sys-master/images/h6c/ha2/16497447469086/FMEP-4801BRO-BR_BROWN.jpg_230Wx334H",
-                name:"El Paso",
-                desc:"Synthetic Leather Mid Tops Lace Up Mens Casual Boots",
-                price:"873",
-                strike_price:"3495",
-                offer:"75% off"
-            },
-            {
-                image_url:"https://sslimages.shoppersstop.com/sys-master/images/hd8/hd1/17362868568094/FADI-EX3783-GY_GREY.jpg_230Wx334H",
-                name:"Adidas",
-                desc:"PU Velcro Mens Sports Sandals",
-                price:"1399",
-                strike_price:"2799",
-                offer:"50% off"
-            },
-            {
-                image_url:"https://sslimages.shoppersstop.com/sys-master/images/h44/hb0/17529297305630/FMPU36858202-RD_RED.jpg_230Wx334H",
-                name:"Puma",
-                desc:"Synthetic Leather Regular Slip On Mens Slides",
-                price:"2999",
-                strike_price:"",
-                offer:""
-            },
-            {
-                image_url:"https://sslimages.shoppersstop.com/sys-master/images/h9f/hf8/26983590592542/FMPU37599914_WHITE.jpg_230Wx334H",
-                name:"Puma",
-                desc:"Textile Regular Lace Up Mens Sport Shoes",
-                price:"6999",
-                strike_price:"",
-                offer:""
-            },
-            {
-                image_url:"https://sslimages.shoppersstop.com/sys-master/images/h10/hc7/26829146947614/FMLC9519B1R-BR_BROWN.jpg_230Wx334H",
-                name:"Lee Cooper",
-                desc:"Leather High Tops Lace Up Mens Boots",
-                price:"2999",
-                strike_price:"",
-                offer:""
-            },
-            {
-                image_url:"https://sslimages.shoppersstop.com/sys-master/images/h55/h4d/17360055664670/FADI-EX2335-BU_BLUE.jpg_230Wx334H",
-                name:"Adidas",
-                desc:"PU Slip On Mens Flip Flops",
-                price:"899",
-                strike_price:"1799",
-                offer:"50% off"
-            },
-            {
-                image_url:"https://sslimages.shoppersstop.com/sys-master/images/h1e/h93/26770077450270/FMJJ190180007AD_ALMOND.jpg_230Wx334H",
-                name:"Jack And Jones",
-                desc:"Suede Regular Slip On Mens Loafers",
-                price:"2999",
-                strike_price:"",
-                offer:""
-            },
-            {
-                image_url:"https://sslimages.shoppersstop.com/sys-master/images/hc0/hd4/17501894508574/FADI-FW5126-GY_GREY.jpg_230Wx334H",
-                name:"Adidas",
-                desc:"Textile Lace Up Mens Sports Shoes",
-                price:"2799",
-                strike_price:"5599",
-                offer:"50% off"
-            },
-            {
-                image_url:"https://sslimages.shoppersstop.com/sys-master/images/ha7/h18/27219481034782/FMNBCK4020_WHITE.jpg_230Wx334H",
-                name:"New Balance",
-                desc:"Synthetic Mesh Mid Tops Lace Up Mens Sneakers",
-                price:"4999",
-                strike_price:"",
-                offer:""
-            },
-            {
-                image_url:"https://sslimages.shoppersstop.com/sys-master/images/h15/h4b/26829204815902/FMLC9895BR-BR_BROWN.jpg_230Wx334H",
-                name:"Lee Cooper",
-                desc:"Leather Regular Slipon Mens Formal Shoes",
-                price:"2699",
-                strike_price:"",
-                offer:""
-            },
-            {
-                image_url:"https://sslimages.shoppersstop.com/sys-master/images/h10/ha8/16899217326110/FWRBKFU8185WT_WHITE.jpg_230Wx334H",
-                name:"Reebok",
-                desc:"Synthetic Lace Up Mens Sports Shoes",
-                price:"3799",
-                strike_price:"7599",
-                offer:"50% off"
-            },
-            {
-                image_url:"https://sslimages.shoppersstop.com/sys-master/images/h79/h2c/17183331614750/FADI-EX3774-BU_BLUE.jpg_230Wx334H",
-                name:"Adidas",
-                desc:"PU Velcro Mens Sandals",
-                price:"1399",
-                strike_price:"2799",
-                offer:"50% off"
-            },
-            {
-                image_url:"https://sslimages.shoppersstop.com/sys-master/images/haa/h7c/26829150617630/FMLC2151BR_BLACK.jpg_230Wx334H",
-                name:"Lee Cooper",
-                desc:"Leather Regular Slipon Mens Sandals",
-                price:"2899",
-                strike_price:"",
-                offer:""
-            },
-            {
-                image_url:"https://sslimages.shoppersstop.com/sys-master/images/h00/hed/26983626539038/FMPU39014205_BLUE.jpg_230Wx334H",
-                name:"Puma",
-                desc:"Synthetic Leather Regular Slip On Mens Flip Flops",
-                price:"1999",
-                strike_price:"",
-                offer:""
-            },
-            {
-                image_url:"https://sslimages.shoppersstop.com/sys-master/images/h70/h0a/17333954773022/FM-LC3006E-BR_BROWN.jpg_230Wx334H",
-                name:"Lee Cooper",
-                desc:"Leather Regular Lace Up Mens Casual Shoes",
-                price:"1199",
-                strike_price:"1199",
-                offer:"40% off"
-            },
-            {
-                image_url:"https://sslimages.shoppersstop.com/sys-master/images/hba/h06/27208483995678/FMNM-SL-TR-GR_PEBBLE.jpg_230Wx334H",
-                name:"Neemans",
-                desc:"Core Fashion Unisex Slippers",
-                price:"699",
-                strike_price:"",
-                offer:""
-            },
-            {
-                image_url:"https://sslimages.shoppersstop.com/sys-master/images/h89/h42/17362146525214/FADI-EX2131-BK_BLACK.jpg_230Wx334H",
-                name:"Adidas",
-                desc:"PU Slip On Mens Sports Shoes",
-                price:"2299",
-                strike_price:"4599",
-                offer:"50% off"
-            },
-            {
-                image_url:"https://sslimages.shoppersstop.com/sys-master/images/h68/h46/17333372157982/FMJJ236717101BU_BLUE.jpg_230Wx334H",
-                name:"Jack And Jones",
-                desc:"Other Low Tops Lace Up Mens Casual Shoes",
-                price:"2999",
-                strike_price:"",
-                offer:""
-            },
-            {
-                image_url:"https://sslimages.shoppersstop.com/sys-master/images/h1c/h84/26829163003934/FMLC9254BR-BK_BLACK.jpg_230Wx334H",
-                name:"Lee Cooper",
-                desc:"Leather Regular Slipon Mens Formal Shoes",
-                price:"2599",
-                strike_price:"",
-                offer:""
-            }, {
-                image_url:"https://sslimages.shoppersstop.com/sys-master/images/h2f/h91/13633487732766/205863571_9212.jpg_230Wx334H",
-                name:"Skechers",
-                desc:"Mens Mesh Slipon Sports Shoes",
-                price:"4499",
-                strike_price:"5999",
-                offer:"25% off"
-            },
-            {
-                image_url:"https://sslimages.shoppersstop.com/sys-master/images/h56/hbf/26829276413982/FMLC2183BR-NV_NAVY.jpg_230Wx334H",
-                name:"Lee Cooper",
-                desc:"Leather Regular Lace Up Mens Derby Shoes",
-                price:"3299",
-                strike_price:"",
-                offer:""
-            },
-            {
-                image_url:"https://sslimages.shoppersstop.com/sys-master/images/hcc/h05/16496944578590/FMEP-4806TAN-TN_TAN.jpg_230Wx334H",
-                name:"El Paso",
-                desc:"Synthetic Leather Mid Tops Lace Up Mens Casual Boots",
-                price:"873",
-                strike_price:"3495",
-                offer:"75% off"
-            },
-            {
-                image_url:"https://sslimages.shoppersstop.com/sys-master/images/h19/h88/17066127753246/FMC205665386-AR_ARMY.jpg_230Wx334H",
-                name:"Crocs",
-                desc:"Baya Croslite Slip On Mens Casual Clogs",
-                price:"1495",
-                strike_price:"",
-                offer:""
-            },
-            {
-                image_url:"https://sslimages.shoppersstop.com/sys-master/images/h71/h5f/26829189316638/FMLC8767BR-BK_BLACK.jpg_230Wx334H",
-                name:"Lee Cooper",
-                desc:"Leather Regular Slipon Mens Sandals",
-                price:"1799",
-                strike_price:"",
-                offer:""
-            },
-            {
-                image_url:"https://sslimages.shoppersstop.com/sys-master/images/h02/hba/26829161562142/FMLC8455B1R-BG_BEIGE.jpg_230Wx334H",
-                name:"Lee Cooper",
-                desc:"Leather Regular Slipon Mens Sandals",
-                price:"1799",
-                strike_price:"",
-                offer:""
-            },
-            {
-                image_url:"https://sslimages.shoppersstop.com/sys-master/images/he2/h7c/16611620126750/FRBK-EW4235-NV_NAVY.jpg_230Wx334H",
-                name:"Reebok",
-                desc:"Synthetic Slipon Mens Flip Flops",
-                price:"649",
-                strike_price:"1299",
-                offer:"50% off"
-            },
-            {
-                image_url:"https://sslimages.shoppersstop.com/sys-master/images/hfb/ha2/17529386434590/FMPU36858102-GN_GREEN.jpg_230Wx334H",
-                name:"Puma",
-                desc:"Synthetic Leather Regular Slip On Mens Slides",
-                price:"2999",
-                strike_price:"",
-                offer:""
-            },
-            {
-                image_url:"https://sslimages.shoppersstop.com/sys-master/images/h28/h4d/26775800709150/FMPU36998201-BK_BLACK.jpg_230Wx334H",
-                name:"Puma",
-                desc:"Textile Low Boot Laces Unisex Sports Shoes",
-                price:"6999",
-                strike_price:"",
-                offer:""
-            },
-            {
-                image_url:"https://sslimages.shoppersstop.com/sys-master/images/hb2/h2a/27185688608798/SKYCRUISBROWN_BROWN.jpg_230Wx334H",
-                name:"Solethreads",
-                desc:"Synthetic Regular Slip On Mens Flip Flops",
-                price:"974",
-                strike_price:"1499",
-                offer:"35% off"
-            },
+         
+    {
+        image_url:"https://sslimages.shoppersstop.com/sys-master/images/h1d/h21/26983776452638/FMPU37628904_WHITE_alt1.jpg_1088Wx1632H",
+        image_url1:"https://sslimages.shoppersstop.com/sys-master/images/h1c/hc3/26983842709534/FMPU37628904_WHITE_alt2.jpg_1088Wx1632H",
+        image_url2:"https://sslimages.shoppersstop.com/sys-master/images/hc5/h96/26983560970270/FMPU37628904_WHITE.jpg_1088Wx1632H",
+        name:"Jack And Jones",
+        desc:"Pu Regular Lace Up Mens Sneakers",
+        price:"3999",
+        strike_price:"",
+        offer:""
+    },
+    {
+        image_url:"https://sslimages.shoppersstop.com/sys-master/images/h89/h48/26776123146270/FMPU30692301-BK_BLACK_alt1.jpg_1088Wx1632H",
+        image_url1:"https://sslimages.shoppersstop.com/sys-master/images/h44/hd5/26776112988190/FMPU30692301-BK_BLACK_alt2.jpg_1088Wx1632H",
+        image_url2:"https://sslimages.shoppersstop.com/sys-master/images/h8f/hf3/26775625596958/FMPU30692301-BK_BLACK.jpg_1088Wx1632H",
+        name:"Puma",
+        desc:"Textile Regular Lace Up Mens Sport Shoes",
+        price:"5999",
+        strike_price:"",
+        offer:""
+    },
+    {
+        image_url:"https://sslimages.shoppersstop.com/sys-master/images/h0d/h79/26776105451550/FMPU37610701-BK_BLACK_alt1.jpg_1088Wx1632H",
+        image_url1:"https://sslimages.shoppersstop.com/sys-master/images/hf9/h35/26775737139230/FMPU37610701-BK_BLACK_alt2.jpg_1088Wx1632H",
+        image_url2:"https://sslimages.shoppersstop.com/sys-master/images/h1c/h9f/26775817551902/FMPU37610701-BK_BLACK.jpg_1088Wx1632H",
+        name:"Puma",
+        desc:"Mesh Regular Lace Up Mens Sports Shoes",
+        price:"6999",
+        strike_price:"",
+        offer:""
+    },
+    {
+        image_url:"https://sslimages.shoppersstop.com/sys-master/images/h9f/h92/17523665076254/206480869_BLACK.jpg_230Wx334H",
+        image_url1:"https://sslimages.shoppersstop.com/sys-master/images/hc2/h3f/17523680968734/206480869_BLACK_alt1.jpg_1088Wx1632H",
+        image_url2:"https://sslimages.shoppersstop.com/sys-master/images/hba/h3c/17523758628894/206480869_BLACK_alt2.jpg_1088Wx1632H",
+        name:"Puma",
+        desc:"Textile Low Boot Laces Unisex Sports Shoes",
+        price:"8999",
+        strike_price:"",
+        offer:""
+    },
+    {
+        image_url:"https://sslimages.shoppersstop.com/sys-master/images/h97/h38/26983628734494/FMPU38621201_WHITE.jpg_230Wx334H",
+        image_url1:"https://sslimages.shoppersstop.com/sys-master/images/h4f/h71/26983829241886/FMPU38621201_WHITE_alt1.jpg_1088Wx1632H",
+        image_url2:"https://sslimages.shoppersstop.com/sys-master/images/h46/he6/26983809843230/FMPU38621201_WHITE_alt2.jpg_1088Wx1632H",
+        name:"Puma",
+        desc:"Synthetic Leather Mid Top Lace Up Mens Sport Shoes",
+        price:"5999",
+        strike_price:"",
+        offer:""
+    },
+    {
+        image_url:"https://sslimages.shoppersstop.com/sys-master/images/h2a/ha9/16497447272478/FMEP-4801BRO-BR_BROWN.jpg_1088Wx1632H",
+        image_url1:"https://sslimages.shoppersstop.com/sys-master/images/hd6/h7a/16496120889374/FMEP-4801BRO-BR_BROWN_alt1.jpg_1088Wx1632H",
+        image_url2:"https://sslimages.shoppersstop.com/sys-master/images/hc9/h56/16496164274206/FMEP-4801BRO-BR_BROWN_alt2.jpg_1088Wx1632H",
+        name:"El Paso",
+        desc:"Synthetic Leather Regular Slip On Mens Sandals",
+        price:"973",
+        strike_price:"3895",
+        offer:"75% off"
+    },
+    {
+        image_url:"https://sslimages.shoppersstop.com/sys-master/images/h1f/hde/17290726015006/FM-LC3391A-GN_GREEN.jpg_1088Wx1632H",
+        image_url1:"https://sslimages.shoppersstop.com/sys-master/images/he7/h2a/17291167662110/FM-LC3391A-GN_GREEN_alt1.jpg_1088Wx1632H",
+        image_url2:"https://sslimages.shoppersstop.com/sys-master/images/ha8/haf/17291349393438/FM-LC3391A-GN_GREEN_alt2.jpg_1088Wx1632H",
+        name:"Lee Cooper",
+        desc:"Leather Regular Slip On Mens Formal Shoes",
+        price:"1499",
+        strike_price:"2599",
+        offer:"40% off"
+    },
+    {
+        image_url:"https://sslimages.shoppersstop.com/sys-master/images/hed/ha9/26769974755358/FMJJ190180005GN_GREEN.jpg_1088Wx1632H",
+        image_url1:"https://sslimages.shoppersstop.com/sys-master/images/h5f/h8a/26769908006942/FMJJ190180005GN_GREEN_alt1.jpg_1088Wx1632H",
+        image_url2:"https://sslimages.shoppersstop.com/sys-master/images/h83/h22/26769972985886/FMJJ190180005GN_GREEN_alt2.jpg_1088Wx1632H",
+        name:"Jack And Jones",
+        desc:"Suede Regular Slip On Mens Loafers",
+        price:"2999",
+        strike_price:"",
+        offer:""
+    },
+    {
+        image_url:"https://sslimages.shoppersstop.com/sys-master/images/h2e/h77/16496023371806/FMEP-5925BLA-BK_BLACK.jpg_1088Wx1632H",
+        image_url1:"https://sslimages.shoppersstop.com/sys-master/images/h25/h81/16496738205726/FMEP-5925BLA-BK_BLACK_alt1.jpg_1088Wx1632H",
+        image_url2:"https://sslimages.shoppersstop.com/sys-master/images/h81/hc0/16496942940190/FMEP-5925BLA-BK_BLACK_alt2.jpg_1088Wx1632H",
+        name:"El Paso",
+        desc:"Synthetic Leather Mid Tops Lace Up Mens Casual Boots",
+        price:"873",
+        strike_price:"3495",
+        offer:"75% off"
+    },
+    {
+        image_url:"https://sslimages.shoppersstop.com/sys-master/images/h54/hb8/16899700195358/FADI-EX2192-GY_GREY_alt1.jpg_1088Wx1632H",
+        image_url1:"https://sslimages.shoppersstop.com/sys-master/images/hf3/h6f/16899712778270/FADI-EX2192-GY_GREY_alt2.jpg_1088Wx1632H",
+        image_url2:"https://sslimages.shoppersstop.com/sys-master/images/ha3/h29/16899341844510/FADI-EX2192-GY_GREY.jpg_1088Wx1632H",
+        name:"Adidas",
+        desc:"PU Velcro Mens Sports Sandals",
+        price:"1399",
+        strike_price:"2799",
+        offer:"50% off"
+    },
+    {
+        image_url:"https://sslimages.shoppersstop.com/sys-master/images/hc2/h65/26983916634142/FMPU37599914_WHITE_alt1.jpg_1088Wx1632H",
+        image_url1:"https://sslimages.shoppersstop.com/sys-master/images/h22/h3e/26984030732318/FMPU37599914_WHITE_alt2.jpg_1088Wx1632H",
+        image_url2:"https://sslimages.shoppersstop.com/sys-master/images/h91/he6/26983590002718/FMPU37599914_WHITE.jpg_1088Wx1632H",
+        name:"Puma",
+        desc:"Synthetic Leather Regular Slip On Mens Slides",
+        price:"2999",
+        strike_price:"",
+        offer:""
+    },
+    {
+        image_url:"https://sslimages.shoppersstop.com/sys-master/images/ha5/h15/26983988461598/FMPU19523405-RD_RED_alt1.jpg_1088Wx1632H",
+        image_url1:"https://sslimages.shoppersstop.com/sys-master/images/ha9/h96/26984164196382/FMPU19523405-RD_RED_alt2.jpg_1088Wx1632H",
+        image_url2:"https://sslimages.shoppersstop.com/sys-master/images/h39/he8/26983663370270/FMPU19523405-RD_RED.jpg_1088Wx1632H",
+        name:"Puma",
+        desc:"Textile Regular Lace Up Mens Sport Shoes",
+        price:"6999",
+        strike_price:"",
+        offer:""
+    },
+    {
+        image_url:"https://sslimages.shoppersstop.com/sys-master/images/h11/h18/17333954379806/FM-LC3006E-BR_BROWN.jpg_1088Wx1632H",
+        image_url1:"https://sslimages.shoppersstop.com/sys-master/images/h11/h18/17333954379806/FM-LC3006E-BR_BROWN.jpg_1088Wx1632H",
+        image_url2:"https://sslimages.shoppersstop.com/sys-master/images/h11/h18/17333954379806/FM-LC3006E-BR_BROWN.jpg_1088Wx1632H",
+        name:"Lee Cooper",
+        desc:"Leather High Tops Lace Up Mens Boots",
+        price:"2999",
+        strike_price:"",
+        offer:""
+    },
+    {
+        image_url:"https://sslimages.shoppersstop.com/sys-master/images/h8e/h6e/17291413422110/FM-LC3528E-NV_NAVY_alt1.jpg_1088Wx1632H",
+        image_url1:"https://sslimages.shoppersstop.com/sys-master/images/hee/h30/17290257072158/FM-LC3528E-NV_NAVY_alt2.jpg_1088Wx1632H",
+        image_url2:"https://sslimages.shoppersstop.com/sys-master/images/h75/hb4/17290096017438/FM-LC3528E-NV_NAVY.jpg_1088Wx1632H",
+        name:"Adidas",
+        desc:"PU Slip On Mens Flip Flops",
+        price:"899",
+        strike_price:"1799",
+        offer:"50% off"
+    },
+    {
+        image_url:"https://sslimages.shoppersstop.com/sys-master/images/h82/h0b/26829151862814/FMLC9634B1R-BR_BROWN_alt1.jpg_1088Wx1632H",
+        image_url1:"https://sslimages.shoppersstop.com/sys-master/images/h43/h97/26829250002974/FMLC9634B1R-BR_BROWN_alt2.jpg_1088Wx1632H",
+        image_url2:"https://sslimages.shoppersstop.com/sys-master/images/h23/hc9/26829196460062/FMLC9634B1R-BR_BROWN.jpg_1088Wx1632H",
+        name:"Jack And Jones",
+        desc:"Suede Regular Slip On Mens Loafers",
+        price:"2999",
+        strike_price:"",
+        offer:""
+    },
+    {
+        image_url:"https://sslimages.shoppersstop.com/sys-master/images/h8e/h8e/26727873282078/FMAD-S23679-BK_BLACK_alt1.jpg_1088Wx1632H",
+        image_url1:"https://sslimages.shoppersstop.com/sys-master/images/h8a/h7b/26727430881310/FMAD-S23679-BK_BLACK_alt2.jpg_1088Wx1632H",
+        image_url2:"https://sslimages.shoppersstop.com/sys-master/images/h97/h15/26727908114462/FMAD-S23679-BK_BLACK.jpg_1088Wx1632H",
+        name:"Adidas",
+        desc:"Textile Lace Up Mens Sports Shoes",
+        price:"2799",
+        strike_price:"5599",
+        offer:"50% off"
+    },
+    {
+        image_url:"https://sslimages.shoppersstop.com/sys-master/images/hf6/hfd/27219483590686/FMNBCK4020_WHITE_alt1.jpg_1088Wx1632H",
+        image_url1:"https://sslimages.shoppersstop.com/sys-master/images/h2e/hb0/27219565248542/FMNBCK4020_WHITE_alt2.jpg_1088Wx1632H",
+        image_url2:"https://sslimages.shoppersstop.com/sys-master/images/h91/h3c/27219480641566/FMNBCK4020_WHITE.jpg_1088Wx1632H",
+        name:"New Balance",
+        desc:"Synthetic Mesh Mid Tops Lace Up Mens Sneakers",
+        price:"4999",
+        strike_price:"",
+        offer:""
+    },
+    {
+        image_url:"https://sslimages.shoppersstop.com/sys-master/images/h9f/h9f/26769880449054/FMJJ226687801BO_BISON_alt1.jpg_1088Wx1632H",
+        image_url1:"https://sslimages.shoppersstop.com/sys-master/images/hd3/h2e/26770044944414/FMJJ226687801BO_BISON_alt2.jpg_1088Wx1632H",
+        image_url2:"https://sslimages.shoppersstop.com/sys-master/images/h93/hff/26770068209694/FMJJ226687801BO_BISON.jpg_1088Wx1632H",
+        name:"Lee Cooper",
+        desc:"Leather Regular Slipon Mens Formal Shoes",
+        price:"2699",
+        strike_price:"",
+        offer:""
+    },
+    {
+        image_url:"https://sslimages.shoppersstop.com/sys-master/images/h38/hf3/16964045144094/FWRBKFU8541GY_GREY_alt1.jpg_1088Wx1632H",
+        image_url1:"https://sslimages.shoppersstop.com/sys-master/images/hd2/h36/16965719392286/FWRBKFU8541GY_GREY_alt2.jpg_1088Wx1632H",
+        image_url2:"https://sslimages.shoppersstop.com/sys-master/images/h77/hb7/16963999924254/FWRBKFU8541GY_GREY.jpg_1088Wx1632H",
+        name:"Reebok",
+        desc:"Synthetic Lace Up Mens Sports Shoes",
+        price:"3799",
+        strike_price:"7599",
+        offer:"50% off"
+    },
+    {
+        image_url:"https://sslimages.shoppersstop.com/sys-master/images/h19/h5d/16611172581406/FADS-EX3763-BU_BLUE_alt1.jpg_1088Wx1632H",
+        image_url1:"https://sslimages.shoppersstop.com/sys-master/images/he4/hbe/16612002889758/FADS-EX3763-BU_BLUE_alt2.jpg_1088Wx1632H",
+        image_url2:"https://sslimages.shoppersstop.com/sys-master/images/h38/h36/16611763716126/FADS-EX3763-BU_BLUE.jpg_1088Wx1632H",
+        name:"Adidas",
+        desc:"PU Velcro Mens Sandals",
+        price:"1399",
+        strike_price:"2799",
+        offer:"50% off"
+    },
+    {
+        image_url:"https://sslimages.shoppersstop.com/sys-master/images/ha0/h98/17129654321182/FMC205665386-AR_ARMY_alt1.jpg_1088Wx1632H",
+        image_url1:"https://sslimages.shoppersstop.com/sys-master/images/hd7/hf1/17128117764126/FMC205665386-AR_ARMY_alt2.jpg_1088Wx1632H",
+        image_url2:"https://sslimages.shoppersstop.com/sys-master/images/h48/h81/17066127556638/FMC205665386-AR_ARMY.jpg_1088Wx1632H",
+        name:"Lee Cooper",
+        desc:"Leather Regular Slipon Mens Sandals",
+        price:"2899",
+        strike_price:"",
+        offer:""
+    },
+    {
+        image_url:"https://sslimages.shoppersstop.com/sys-master/images/h64/h5c/17529656180766/FMPU37227914-WH_WHITE_alt1.jpg_1088Wx1632H",
+        image_url1:"https://sslimages.shoppersstop.com/sys-master/images/h80/hca/17529760776222/FMPU37227914-WH_WHITE_alt2.jpg_1088Wx1632H",
+        image_url2:"https://sslimages.shoppersstop.com/sys-master/images/h0c/h9d/17529456623646/FMPU37227914-WH_WHITE.jpg_1088Wx1632H",
+        name:"Puma",
+        desc:"Synthetic Leather Regular Slip On Mens Flip Flops",
+        price:"1999",
+        strike_price:"",
+        offer:""
+    },
+    
 
 
-        ];
-        localStorage.setItem("mensFootwear",JSON.stringify(mensFootwearData));
+];
+localStorage.setItem("mensFootwear",JSON.stringify(mensFootwearData));
 
 
 
