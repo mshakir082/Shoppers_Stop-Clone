@@ -172,3 +172,13 @@ background-color: tomato;
 #navButton{
     background-color: red;
 }
+#cartItem{
+    background-color:tomato;
+    width:18px;
+    height:18px;
+    border-radius:10px;
+    color:white;
+    margin-left: -45px;
+    margin-top: 20px;
+    text-align:center;
+}

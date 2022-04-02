@@ -1,127 +1,146 @@
 #container {
-    width: 100%;
-    display: flex;
-    margin: auto;
-    height: fit-content;
-    /* border: 1px solid green; */
-    margin-left: -5px;
-    justify-content: space-between;
-   margin-top: 25px;
-  }
+  width: 100%;
+  display: flex;
+  margin: auto;
+  height: fit-content;
+  /* border: 1px solid green; */
+  margin-left: -5px;
+  justify-content: space-between;
+ margin-top: 25px;
+}
 
-  #cart-name {
-    line-height: 1;
-    margin-top: 10%;
-  }
-  .cart-pro {
-    width: 100%;
-    display: flex;
-   justify-content: space-between;
-    margin-left:135px;
+#cart-name {
+  line-height: 1;
+  margin-top: 10%;
+}
+.cart-pro {
+  width: 100%;
+  display: flex;
+ justify-content: space-between;
+  margin-left:135px;
 
-  }
+}
 
 #cart-products {
-    width: 80%;
-    height: 160px;
-    display: flex;
-   justify-content: space-around;
-    border-radius: 5px;
-    border: 1px solid rgb(49, 48, 48);
-    margin-left:25px;
-    margin-bottom: 10px;
-    padding: 10px;
-  }
-  #price{
-      margin-left:15px;
-  }
-  #brand{
-      /* border: 1px solid rgb(49, 48, 48); */
-      margin-left:55px;
-  }
-  #price-bold{
-      font-weight: bold;
-      margin-top: 75px;
-  }
-  #order-summary{
-    
-    width: 30%;
-    height: 550px;
-    
-     border:1px solid black;
-  }
-  #coupon{
-
-    width: 60%;
-    height:20px;
-    margin-left: 30px;
-  }
-  .summary>h3{
-      margin-left: 65px;
-  }
-  #apply{
-    background-color: #fff2f0;
-    color: #ff784f;
-    width: 20%;
-    height:25px;
-    margin-left: 4px;
-    border: none;
-  }
-  
-  #total-box {
-    display: grid;
-    grid-template-columns: repeat(2, 85%);
-    padding: 4%;
-    padding-top:-100px;
-    line-height: 1;
-    
-  }
-  #payable-box {
-    display: grid;
-    grid-template-columns: repeat(2, 85%);
-    padding: 5%;
-    line-height: 1;
-    font-family: sans-serif;
-  }
- 
-  #check-btn {
-    width: 90%;
-    padding: 10px;
-    background-color: rgb(255, 66, 82);
-    color: aliceblue;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
+  width: 80%;
+  height: 160px;
+  display: flex;
+ justify-content: space-around;
+  border-radius: 5px;
+  border: 1px solid rgb(49, 48, 48);
+  margin-left:25px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+#price{
     margin-left:15px;
-  }
- #total{
-   margin-top: 15px;
-   margin-left: 10px;
- }
- #items{
+}
+#brand{
+    /* border: 1px solid rgb(49, 48, 48); */
+    margin-left:55px;
+}
+#price-bold{
+    font-weight: bold;
+    margin-top: 75px;
+}
+#order-summary{
+  
+  width: 30%;
+  height: 550px;
+  border:1px solid black;
+}
+#coupon{
+
+  width: 60%;
+  height:20px;
+  margin-left: 30px;
+}
+.summary>h3{
+    margin-left: 65px;
+}
+#apply{
+  background-color: #fff2f0;
+  color: #ff784f;
+  width: 20%;
+  height:25px;
+  margin-left: 4px;
+  border: none;
+}
+
+#total-box {
+  display: grid;
+  grid-template-columns: repeat(2, 85%);
+  padding: 4%;
+  padding-top:-100px;
+  line-height: 1;
+  
+}
+#payable-box {
+  display: grid;
+  grid-template-columns: repeat(2, 85%);
+  padding: 5%;
+  line-height: 1;
+  font-family: sans-serif;
+}
+
+#check-btn {
+  width: 90%;
+  padding: 10px;
+  background-color: rgb(255, 66, 82);
+  color: aliceblue;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin-left:15px;
+}
+#total{
+ margin-top: 15px;
+ margin-left: 10px;
+}
+#items{
+margin-top: 25px;
+margin-left: 10px;
+color: gray;
+}
+#pinCodeDiv{
+ /* border:1px solid red; */
+ width: 70%;
+ height: 100px;
+background-color:#f3f3f3;
+
+}
+#pincode{
+  width: 30%;
+  height:20px;
+  margin-left: 15px;
+}#check{
+  background-color: #fff2f0;
+  color: #ff784f;
+  width: 10%;
+  height:35px;
+  margin-left: -4px;
+  border: none
+}
+#pincode h5{
+  margin-top :10px;
+}
+#cart-first {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#iconDiv{
   margin-top: 25px;
-  margin-left: 10px;
-  color: gray;
- }
- #pinCodeDiv{
-   /* border:1px solid red; */
-   width: 70%;
-   height: 100px;
-  background-color:#f3f3f3;
- 
-  }
-  #pincode{
-    width: 30%;
-    height:20px;
-    margin-left: 15px;
-  }#check{
-    background-color: #fff2f0;
-    color: #ff784f;
-    width: 10%;
-    height:25px;
-    margin-left: -4px;
-    border: none
-  }
-  #pincode h5{
-    margin-top :10px;
-  }
+  color: grey;
+}
+#mainToral{
+  
+   /* border: 1px solid red; */
+   width: 80%;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+}

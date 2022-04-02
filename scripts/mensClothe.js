@@ -22,7 +22,7 @@ const slideImagfun=(images,slideshow)=>{
 
 
 
-const AppentDatashow=(data,appendDiv)=>{
+const mensDatashow=(data,appendDiv)=>{
    
       appendDiv.innerHTML=null
 
@@ -32,11 +32,7 @@ data.forEach(({image_url, image_url1,image_url2, name, desc,  price, strike_pric
         let rowDiv=document.createElement("div");
          rowDiv.id="homeDataRowDiv";
 
-         rowDiv.addEventListener("click",function(){
-            
-            addToCart(image_url, image_url1,image_url2, name, desc,  price, strike_price, offer)
-            
-         })
+       
 
          let img=document.createElement("img");
          img.src=image_url;
@@ -54,7 +50,6 @@ data.forEach(({image_url, image_url1,image_url2, name, desc,  price, strike_pric
          priceTag.id="priceTag";
 
          let priceTag2 = document.createElement("h5");
-         
          if(strike_price == ""){
          
          priceTag2.innerText=`${strike_price}`;
@@ -91,22 +86,7 @@ data.forEach(({image_url, image_url1,image_url2, name, desc,  price, strike_pric
    });
 }
 
-export  {slideImagfun,AppentDatashow} 
+export  {slideImagfun,mensDatashow} 
 
-//  ------------addTo productInfo--------------
+//  ------------Product Information Data Show--------------
    
- 
- 
-let data=[]
-
-function addToCart(image_url, image_url1,image_url2, name, decs,  price, strike_price, offer){
-
-let obj={
-   image_url1,image_url2,image_url, name, decs,  price, strike_price, offer,
-}
-    console.log(obj)
-    data.push(obj)
-     localStorage.setItem("cartItems",JSON.stringify(data))
-   
-     window.location.href="productInf.html"
- }

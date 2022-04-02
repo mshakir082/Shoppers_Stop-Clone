@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/bag.css">
+    <script src="https://kit.fontawesome.com/088bab0eb4.js" crossorigin="anonymous"></script>
+    <title>Check Out Page</title>
+</head>
+<style>
+    #seconDivcheckout{
+       
+        width:100%;
+        height: 70px;
+        display:flex;
+        justify-content:space-between;
+      }
+     #rightCheckout,.fa-solid{
+          color: #fb641b;
+          margin-top:12px;
+          margin-right: 10px;
+          font-size:20px;
+      }
+#leftCheckout{
+    color:black;
+    font-weight:bold;
+    font-size:20px;
+    margin-top:15px;
+     margin-left: 10px;
+
+}
+#deliverymain{
+width:85%;
+display: flex;
+
+/* justify-content: space-evenly; */
+}
+#addresMain{
+    width:100%;
+    border:1px solid rgb(195, 191, 191);
+    height: 500px;
+}
+#addresMain>H3{
+    background-color: #c0c0c0;
+    margin-top: -3PX;
+    HEIGHT:30PX;
+  padding: 2%;
+}
+#checkoutForm{
+   margin-left: 15px;
+  }
+  #checkoutForm,input {
+    width:70%;
+   height:25px;
+ 
+  }
+  #PROCHECK{
+    background-color:   #ff5c3c;
+    color:white;
+    border: none;
+    width:52%;
+    margin-top:10px;
+    height:30px;
+    margin-left: 300px;
+  }
+</style>
+
+<body>
+    <div id="cart-first">
+        <div id="iconDiv"><i class="fa-solid fa-less-than"></i></div>
+        <div ><img src="https://prodstatic.shoppersstop.com/_ui/updated_path/images/newLogo.svg"></div>
+        <div><h2 style=" color: grey;">SECURE TRANSACTION</h2></div>
+    </div>
+
+    <div id="seconDivcheckout">
+        <div id="leftCheckout">CHECKOUT</div>
+        <div id="rightCheckout"><i class="fa-solid fa-lock"></i>VIEW BAG</div>
+     
+    </div>
+    <hr>
+    <div id="deliverymain">
+        <!-- <div id="delileft">DELIVERY METHOD</div> -->
+        <div id="addresMain"> <H3>1.DELIVERY METHOD</H3>
+
+                <form id="checkoutForm">
+                    <p>Name</p>
+                    <input type="text" placeholder="Enter Your Full Name" required>
+                    <p>Mobil Number</p>
+                    <input type="text" placeholder="Enter Your Number" required>
+                    <p>Pin Code</p>
+                    <input type="text" placeholder="Pincode" required>
+                    <p>Address1</p>
+                    <input type="text" placeholder="" required>
+                    <p>Address2</p>
+                    <input type="text" placeholder="" required>
+                    <input type="button" value="PROCEED TO PAY" id="PROCHECK">
+                </form>
+               
+            </div><br>
+        <div id="container">
+         <div id=""></div>
+            
+            <div id="order-summary" style="width:50%;height:400px;">
+                <div class="summary">
+                    <h3>ORDER SUMMARY</h3>
+                    <input type="text" placeholder="Enter promo/coupon code" id="coupon">
+                    <input type="button" id="apply" value="APPLY">
+                    <p id='invalid'></p>
+                </div>
+                <hr>
+                <div id="total-box">
+                    <p>Subtotal</p>
+                    <p id="subtotal">0</p>
+                    <p>Delivery charges</p>
+                    <p>FREE</p>
+                    <p>Gift packing</p>
+                    <p>FREE</p>
+                    <p>Discount</p>
+                    <p id="coupon-discount">NA</p>
+                </div>
+                <hr>
+                <div id="payable-box">
+                    <h4>Payable Amount</h4>
+                    <p id="payable"></p>
+                </div>
+                
+            </div>
+            
+        </div><br>
+    
+    </div><br>
+        
+  
+
+<!-- Pincode Check Item How Many Day to take delivery -->
+
+    <div>
+        <!-- <h1 id="cart-name">Cart</h1> -->
+    </div>
+    <div class="cart-pro">
+        <!-- <p>Products</p>
+        <p>Amount</p> -->
+    </div>
+
+
+
+</body>
+
+</html>
+ <script src="./scripts/bag.js"></script>
+
+ <script src="./scripts/checkout.js"></script>

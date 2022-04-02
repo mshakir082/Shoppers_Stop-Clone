@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Information</title>
+    <script src="https://kit.fontawesome.com/088bab0eb4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style/productInfo.css">
+    <link rel="stylesheet" href="./style/navbar.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+    <div id="nameDesc">
+        <p id="nameTag">name</p>
+        <p id="descTag">description</p>
+       
+    </div>
+    <div id="cartContainer">
+       <div id="cartImgDiv">
+           <div id="cartImgInnerDiv">
+               <div id="smallImg1">
+                   <img  id="smallImg" src="https://sslimages.shoppersstop.com/sys-master/images/hf8/h0f/26970736984094/S22SFCSLB930357_BLACK_alt1.jpg_1088Wx1632H" alt="">
+               </div>
+               <div id="smallImg2" >
+                   <img  id="smallImgg" src="https://sslimages.shoppersstop.com/sys-master/images/h0e/h50/26969936396318/S22SFCSLB930357_BLACK_alt2.jpg_1088Wx1632H">
+               </div>
+           </div>
+           <div id="cartBigImg">
+               <img id="bigImg" src="https://sslimages.shoppersstop.com/sys-master/images/hb9/h0d/26971781824542/S22SFCSLB930357_BLACK.jpg_1088Wx1632H">
+           </div>
+       </div>
+       <div id="cartDesc">
+           <div id="nameDiv"> Louis Philippe Sports </div>
+           <div id="descDiv">Solid Cotton Slim Fit Mens Casual Shirt</div>
+          
+           <div id="priceDiv">1234</div>
+           <p id="paragraph">Includes all taxes</p>
+           <p id="paragraph"> <span>160</span> &nbsp; People Have Viewed This Product Recently!</p>
+           <p   class="size" >Size</p>
+
+           <div id="sizeDiv">
+              <div>39</div>
+              <div>40</div>
+              <div>42</div>
+              <div>44</div>
+            </div>
+            <p id="paragraph">14 days easy return and exchange applicable for this item</p>
+            <button class="addBtn"  id="addBtn2">ADD TO BAG</button>
+            <div id="productDetail">
+                <p>Product Details</p>
+                <p>Product Description</p>
+                <div id="prodctDeatailInner">
+                   <div>
+                       <p>Country of Origin</p>
+                       <P>Length</P>
+                       <p>Category</p>
+                       <p>Occasion</p>
+                   </div>
+                   <div id="proDetailPara2">
+                       <p>India</p>
+                       <p>Full Length</p>
+                       <p>	Indianwear</p>
+                       <p>	Festive</p>
+                   </div>
+                </div>
+                <p id="codePara">Care Instructions</p>
+                <p id="proDetailPara2">Machine Wash, Wash Dark Colors Separately, Do Not Bleach, Tumble Dry Low, Warm Iron</p>
+            <p id="codePara">Product code:</p>
+            <p id="proDetailPara2">SS22LKFSJACQURD_PINK</p>
+            <p>Manufacturer Details</p>
+            <div id="manufactureDiv">
+                <div><p id="manufacPara">Manufacturer and Packer details</p></div>
+                <div id="manufacPara1">Shoppersstop - Umang Tower, 3rd�floor, Plot no. 1406 A/28, Mindspace, Off Link Road, Behind Inorbit Mall, Malad (West), Mumbai 400 064, India</div>
+            </div>
+            <p id="disclaimPara">DISCLAIMER: Colors of the product might appear slightly different on digital devices.</p>
+            </div>
+            <!-- <button id="addBtn" >ADD TO BAG</button> -->
+        </div>
+      
+    </div>
+    <button class="addBtn1" id="addBtn" >ADD TO BAG</button>
+</body>
+</html>
+
+
+<script type="module">
+
+//  Import Navbar Section-------
+
+import navbar from "./scripts/navbar.js"
+    var header=document.getElementById("header")
+    header.innerHTML=navbar();
+ 
+let data=JSON.parse(localStorage.getItem("cartItems")) || []
+
+   const mensDatashow=(data)=>{
+
+data.forEach(({image_url,image_url1,image_url2, name, decs,  price})=>{
+
+   let nametag=document.getElementById("nameTag");
+   nametag.innerText=name;
+
+
+   let descript=document.getElementById("descTag");
+   descript.innerText=decs;
+
+   let img=document.getElementById("smallImg");
+   img.src=image_url;
+
+    img=document.getElementById("smallImgg");
+    img.src=image_url1;
+
+   img=document.getElementById("bigImg");
+   img.src=image_url2;
+
+    nametag=document.getElementById("nameDiv");
+   nametag.innerText=name;
+
+   descript=document.getElementById("descDiv");
+   descript.innerText=decs;
+   document.querySelector(".addBtn").addEventListener("click",()=>{
+  
+    showItem(image_url,image_url1,image_url2, name, decs,  price)
+})
+
+document.querySelector(".addBtn1").addEventListener("click",()=>{
+  
+  showItem(image_url,image_url1,image_url2, name, decs,  price)
+})
+
+   let pricediv=document.getElementById("priceDiv");
+   pricediv.innerText=`₹${price}`;
+
+    
+});
+   }
+   
+  
+  mensDatashow(data)
+  
+  function showItem(image_url,image_url1,image_url2, name, decs,  price){
+    let item=document.getElementById("cartItem")
+    let cartItem= JSON.parse(localStorage.getItem("cart")) ||[]
+    let obj={
+        image_url,image_url1,image_url2, name, decs,  price
+    }
+    cartItem.push(obj)
+    localStorage.setItem("cart",JSON.stringify(cartItem))
+     item.innerText=cartItem.length;
+   console.log(cartItem.length)
+    // console.log("tab")
+   
+  }
+   
+     
+ 
+
+</script>
+<script src="./data/data.js"></script>

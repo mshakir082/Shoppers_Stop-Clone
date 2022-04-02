@@ -10,7 +10,8 @@ const navbar=()=>{
 
         <h4><input type="text" placeholder="Search Products & Brands"><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></h4> 
          <h4><a href=""><i class="fa-regular fa-heart"></i></a></h4>
-         <h4><a href=""><i class="fa-regular fa-cart-flatbed-suitcase"></i></a></h4>
+         <h4><a href="bag.html"><i class="fa-regular fa-cart-flatbed-suitcase"></i></a></h4>
+         <p id="cartItem"></p>
         <h4><a href=""><i class="fa-regular fa-user"></i></a></h4>
    </div>
 </div>

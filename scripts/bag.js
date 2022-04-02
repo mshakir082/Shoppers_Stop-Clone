@@ -1,14 +1,14 @@
-let cartData = JSON.parse(localStorage.getItem('womenwatch'));
+let cartItem= JSON.parse(localStorage.getItem("cart"))
 
 // --------------display BAg Details -----------------
 
-const display=(cartData)=>{
+const display=(cartItem)=>{
 
 
     document.querySelector('#products').innerHTML = "";
 
-    cartData.map((ele,index)=>{
-        console.log(ele);
+    cartItem.map((ele,index)=>{
+        
         // ---------img div---------
 
         let div = document.createElement('div');
@@ -93,7 +93,7 @@ const display=(cartData)=>{
 
             ele.price = quantityNo * (original_price);
             price.textContent = "₹" + ele.price;
-            orderSummary(cartData);
+            orderSummary(cartItem);
 
         })
        
@@ -109,11 +109,11 @@ const display=(cartData)=>{
 
     del.addEventListener('click',(event)=>{
 
-        cartData.splice(index,1);
-        localStorage.setItem("womenwatch",JSON.stringify(womenswatchData));
+        cartItem.splice(index,1);
+        localStorage.setItem("cart",JSON.stringify(cartItem))
     
-        display(cartData);
-        orderSummary(cartData)
+        display(cartItem);
+        orderSummary(cartItem)
           
     })
        
@@ -146,7 +146,8 @@ const display=(cartData)=>{
 
 
 // -----------------------ordersummary----------------------------
-
+var obj={}
+        
 function orderSummary(arr){
 
     var total = 0;
@@ -158,10 +159,14 @@ function orderSummary(arr){
 
     let order_subtotal = document.getElementById('subtotal');
     order_subtotal.innerText =  "₹" +total;
+    obj["subtotal"]=total
 
+   
     let payable = document.getElementById('payable');
     payable.innerText = "₹"+ Number(total);
-    
+    obj["total"]= Number(total);
+   
+  
     let apply = document.getElementById('apply');
 
     apply.addEventListener('click',()=>{
@@ -182,7 +187,11 @@ function orderSummary(arr){
     
             total = total - total*30/100;
 
-            payable.innerHTML = "₹"+ Math.ceil(total);;
+            payable.innerHTML = "₹"+ Math.ceil(total);
+
+            obj["discount"]=  total*30/100;
+            obj["total"]=Math.ceil(total);
+          
         }
         else{
             
@@ -192,7 +201,17 @@ function orderSummary(arr){
             invalid_display.textContent = 'Invalid coupon'
 
         }
+        let arr=[];
+        arr.push(obj);
+        localStorage.setItem('checkout',JSON.stringify(arr))
     })
+   
+   
 }
-display(cartData)
 
+display(cartItem)
+
+document.getElementById("check-btn").addEventListener("click", ()=>{
+
+    window.location.href = "checkout.html"
+})
