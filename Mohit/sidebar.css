@@ -1,3 +1,4 @@
+
 .accordin{
     width: 250px;
     /* border:1px solid black; */
@@ -69,14 +70,6 @@
 
 }
 
-
-
-
-
-
-
-
-
 .accordin .contentBx .content1{
     position: relative;
     background: white;
@@ -85,10 +78,7 @@
     transition: 0.4s;
     overflow-y: auto;
     text-align:justify ;
-    padding: 0px 10px;
- 
-    
-    
+    padding: 0px 10px;  
    
 }
 .accordin .contentBx.active .content1{
