@@ -22,21 +22,33 @@ const slideImagfun=(images,slideshow)=>{
 
 
 
+//  var data=[]
+
+ 
 const mensDatashow=(data,appendDiv)=>{
-   
+  
+
       appendDiv.innerHTML=null
+   
+data.forEach(({image_url, image_url1,image_url2, name, decs,  price, strike_price, offer})=>{
 
-data.forEach(({image_url, name, decs,  price, strike_price, offer})=>{
-
-
+   
         let rowDiv=document.createElement("div");
          rowDiv.id="homeDataRowDiv";
+
+         rowDiv.addEventListener("click",function(){
+            
+            addToCart(image_url, image_url1,image_url2, name, decs,  price, strike_price, offer)
+            
+         })
 
          let img=document.createElement("img");
          img.src=image_url;
 
          let Title = document.createElement("h3");
          Title.innerText=name;
+
+         
 
          let descriptions= document.createElement("p");
          descriptions.innerText=decs;
@@ -84,8 +96,25 @@ data.forEach(({image_url, name, decs,  price, strike_price, offer})=>{
    });
 }
 
+let data=[]
+
+function addToCart(image_url, image_url1,image_url2, name, decs,  price, strike_price, offer){
+
+let obj={
+   image_url1,image_url2,image_url, name, decs,  price, strike_price, offer,
+}
+    console.log(obj)
+    data.push(obj)
+     localStorage.setItem("cartItems",JSON.stringify(data))
+   
+     window.location.href="cart2.html"
+ }
+
+
 export  {slideImagfun,mensDatashow} 
 
-//  ------------Sort Function--------------
+
+
+
    
  
