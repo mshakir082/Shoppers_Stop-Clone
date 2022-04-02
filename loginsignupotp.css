@@ -1,0 +1,189 @@
+/* signup */
+#upper{
+    height: 200px;
+    width: 25%;
+    justify-content: center;
+    border: 2px solid black;
+    margin: auto;
+    background-color: black;
+    color: white;
+    
+}
+#upper h1
+{
+    margin-top: 90px;
+}
+#skip{
+    margin-left: 330px;
+   color: white;
+   font-size: larger;
+}
+#lower{
+    height: 400px;
+    width: 25%;
+    justify-content: center;
+    border: 2px solid black;
+    margin: auto;
+    text-align: center;
+   
+
+}
+#number{
+    padding: 10px;
+    width: 250px;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    /* background-color: #eee; */
+    outline: none;
+    margin-top: 30px;
+}
+#submit{
+    padding: 5px;
+    width: 200px;
+    background-color: black;
+    color: white;
+}
+#lower a{
+    /* font-size: xx-large; */
+  
+}
+img{
+    height: 40px;
+    width: 40px;
+}
+#p{
+    margin-top: 120px;
+}
+#termcondition{
+ color: brown;
+ text-decoration: none;
+}
+.facebook{
+    font-size: 40px;
+  padding: 8px;
+}
+
+/* login */
+
+#upper{
+    height: 220px;
+    width: 28%;
+    justify-content: center;
+    border: 2px solid black;
+    margin: auto;
+    background-color: black;
+    color: white;
+    
+}
+#lower{
+    height: 450px;
+    width: 28%;
+    justify-content: center;
+    border: 2px solid black;
+    margin: auto;
+    text-align: center;
+   
+
+}
+#upper h1
+{
+    margin-top: 90px;
+}
+#loginform>input{
+    margin-top: 25px;
+    width: 300px;
+    height: 40px;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    /* background-color: #eee; */
+    outline: none;
+   
+}
+#gender{
+    height: 30px;
+    width: 310px;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    /* background-color: #eee; */
+    outline: none;
+    margin-top: 20px;
+}
+#submit{
+    background-color: black;
+    
+    color: white;
+    margin-top: 100px;
+
+    
+}
+#skip{
+    margin-left: 87%;
+    color: white;
+}
+#arrow{
+    text-decoration: none;
+    color: white;
+    font-size: xx-large;
+}
+
+/* otp */
+
+#upper{
+    height: 220px;
+    width: 28%;
+    justify-content: center;
+    border: 2px solid black;
+    margin: auto;
+    background-color: black;
+    color: white;
+    
+}
+#skip{
+    margin-left: 87%;
+    color: white;
+}
+#arrow{
+    text-decoration: none;
+    color: white;
+    font-size: xx-large;
+}
+#lower{
+    
+    height: 450px;
+    width: 28%;
+    justify-content: center;
+    border: 2px solid black;
+    margin: auto;
+    text-align: center;
+   
+
+}
+input{
+    width: 30px;
+    margin-top: 50px;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    /* background-color: #eee; */
+    outline: none;
+    padding: 9px;
+    
+}
+#submit{
+    width: 250px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    
+}
+#resend{
+    text-decoration: none;
+    color: black;
+}

@@ -11,7 +11,7 @@ const navbar=()=>{
         <h4><input type="text" placeholder="Search Products & Brands"><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></h4> 
          <h4><a href=""><i class="fa-regular fa-heart"></i></a></h4>
          <h4><a href=""><i class="fa-regular fa-cart-flatbed-suitcase"></i></a></h4>
-        <h4><a href=""><i class="fa-regular fa-user"></i></a></h4>
+        <h4><a href="./signup.html"><i class="fa-regular fa-user"></i></a></h4>
    </div>
 </div>
 <div id="all_item_navbar">
@@ -20,21 +20,21 @@ const navbar=()=>{
     <li><a href="">MEN</a>
 
     <ul>
-    <li><a href="">Mens All Product</a>
+    <li><a href="#">Mens All Product</a>
     <div class="submenu">
         <ul class="submenulist">
-            <h4><a href="">All Clothing</a></h4>
-            <h4><a href="">T-Shirts & Polos</a></h4>
-            <h4><a href="">Shirts</a></h4>
-            <li><a href="">All Shirts</a></li>
-            <li><a href="">Casual</a></li>
-            <li><a href="">Formal</a></li>
-            <h4><a href="">Jeans</a></h4>
-            <h4><a href="">All Trousers</a></h4>
+            <h4><a href="./mensclothing.html">All Clothing</a></h4>
+            <h4><a href="./mensclothing.html">T-Shirts & Polos</a></h4>
+            <h4><a href="./mensclothing.html">Shirts</a></h4>
+            <li><a href="./mensclothing.html">All Shirts</a></li>
+            <li><a href="./mensclothing.html">Casual</a></li>
+            <li><a href="./mensclothing.html">Formal</a></li>
+            <h4><a href="./mensclothing.html">Jeans</a></h4>
+            <h4><a href="./mensclothing.html">All Trousers</a></h4>
 
-            <li><a href="">Trousers</a></li>
-            <li><a href="">Casual</a></li>
-            <li><a href="">Formal</a></li>
+            <li><a href="./mensclothing.html">Trousers</a></li>
+            <li><a href="./mensclothing.html">Casual</a></li>
+            <li><a href="./mensclothing.html">Formal</a></li>
            
            
            
@@ -64,18 +64,18 @@ const navbar=()=>{
 
         
         <ul class="submenulist">
-            <h4><a href="">All Watches</a></h4>
+            <h4><a href="./menswatchdata.html">All Watches</a></h4>
             <!-- <h4><a href="">T-Shirts & Polos</a></h4>
             <h4><a href="">Shirts</a></h4> -->
-            <li><a href="">Smartwatch & Fitness Bands</a></li>
-            <li><a href="">Hybrid</a></li>
-            <li><a href="">Analog</a></li>
+            <li><a href="./menswatchdata.html">Smartwatch & Fitness Bands</a></li>
+            <li><a href="./menswatchdata.html">Hybrid</a></li>
+            <li><a href="./menswatchdata.html">Analog</a></li>
             <!-- <h4><a href=""></a></h4>
             <h4><a href="">All Trousers</a></h4> -->
 
-            <li><a href="">Analog Digital</a></li>
-            <li><a href="">Digital</a></li>
-            <li><a href="">Chronograph</a></li>
+            <li><a href="./menswatchdata.html">Analog Digital</a></li>
+            <li><a href="./menswatchdata.html">Digital</a></li>
+            <li><a href="./menswatchdata.html">Chronograph</a></li>
            <h4><a href="">Jewellery</a></h4>
 
         </ul>
@@ -117,7 +117,7 @@ const navbar=()=>{
     <li><a href="">WOMEN</a>
     
         <ul>
-            <li><a href="">women All Products</a>
+            <li><a href="#">women All Products</a>
                 <div class="submenu">
                     <ul class="submenulist">
                         <h4><a href="">All Clothing</a></h4>
@@ -172,7 +172,7 @@ const navbar=()=>{
         
                     
                     <ul class="submenulist">
-                        <h4><a href="">All Watches</a></h4>
+                        <h4><a href="./womenwatch.html">All Watches</a></h4>
                         <!-- <h4><a href="">T-Shirts & Polos</a></h4>
                         <h4><a href="">Shirts</a></h4> -->
                         <li><a href="">Smartwatch & Fitness Bands</a></li>
@@ -206,34 +206,34 @@ const navbar=()=>{
     <li><a href="">KIDS</a>
     
         <ul>
-            <li><a href="">Kids All Product</a>
+            <li><a href="./kidscloth.html">Kids All Product</a>
             <div class="submenu">
                 <ul class="submenulist">
-                    <h4><a href="">All Clothing</a></h4>
-                    <h4><a href="">T-Shirts & Polos</a></h4>
-                    <h4><a href="">Shirts</a></h4>
-                    <li><a href="">All Shirts</a></li>
-                    <li><a href="">Casual</a></li>
-                    <li><a href="">Formal</a></li>
-                    <h4><a href="">Jeans</a></h4>
-                    <h4><a href="">All Trousers</a></h4>
+                    <h4><a href="./kidscloth.html">All Clothing</a></h4>
+                    <h4><a href="./kidscloth.html">T-Shirts & Polos</a></h4>
+                    <h4><a href="./kidscloth.html">Shirts</a></h4>
+                    <li><a href="./kidscloth.html">All Shirts</a></li>
+                    <li><a href="./kidscloth.html">Casual</a></li>
+                    <li><a href="./kidscloth.html">Formal</a></li>
+                    <h4><a href="./kidscloth.html">Jeans</a></h4>
+                    <h4><a href="./kidscloth.html">All Trousers</a></h4>
     
-                    <li><a href="">Trousers</a></li>
-                    <li><a href="">Casual</a></li>
-                    <li><a href="">Formal</a></li>
+                    <li><a href="./kidscloth.html">Trousers</a></li>
+                    <li><a href="./kidscloth.html">Casual</a></li>
+                    <li><a href="./kidscloth.html">Formal</a></li>
                    
                    
                    
                 </ul>
     
                 <ul class="submenulist">
-                    <h4><a href="">All Footwear</a></h4>
+                    <h4><a href="./kitsFootwear.html">All Footwear</a></h4>
                     <!-- <h4><a href="">T-Shirts & Polos</a></h4>
-                    <h4><a href="">Shirts</a></h4> -->
-                    <li><a href="">Formal Shoes</a></li>
-                    <li><a href="">Casual Shoes</a></li>
-                    <li><a href="">Sandals & Floaters</a></li>
-                    <li><a href="">Sports Shoes & Sneakers</a></li>
+                    <h4><a href="./kitsFootwear.html">Shirts</a></h4> -->
+                    <li><a href="./kitsFootwear.html">Formal Shoes</a></li>
+                    <li><a href="./kitsFootwear.html">Casual Shoes</a></li>
+                    <li><a href="./kitsFootwear.html">Sandals & Floaters</a></li>
+                    <li><a href="./kitsFootwear.html">Sports Shoes & Sneakers</a></li>
                    
                     
     
@@ -250,18 +250,18 @@ const navbar=()=>{
     
                 
                 <ul class="submenulist">
-                    <h4><a href="">All Watches</a></h4>
+                    <h4><a href="./kidswatchdata.html">All Watches</a></h4>
                     <!-- <h4><a href="">T-Shirts & Polos</a></h4>
                     <h4><a href="">Shirts</a></h4> -->
-                    <li><a href="">Smartwatch & Fitness Bands</a></li>
-                    <li><a href="">Hybrid</a></li>
-                    <li><a href="">Analog</a></li>
+                    <li><a href="./kidswatchdata.html">Smartwatch & Fitness Bands</a></li>
+                    <li><a href="./kidswatchdata.html">Hybrid</a></li>
+                    <li><a href="./kidswatchdata.html">Analog</a></li>
                     <!-- <h4><a href=""></a></h4>
                     <h4><a href="">All Trousers</a></h4> -->
     
-                    <li><a href="">Analog Digital</a></li>
-                    <li><a href="">Digital</a></li>
-                    <li><a href="">Chronograph</a></li>
+                    <li><a href="./kidswatchdata.html">Analog Digital</a></li>
+                    <li><a href="./kidswatchdata.html">Digital</a></li>
+                    <li><a href="./kidswatchdata.html">Chronograph</a></li>
                    <h4><a href="">Jewellery</a></h4>
     
                 </ul>
