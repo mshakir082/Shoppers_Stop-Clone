@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .firstdiv{
+
+        height:55px;
+        width:700px;
+        background-color: rgb(206,206,206);
+        padding:1px;
+        display:flex;
+        justify-content: space-between;
+
+    }
+    .seconddiv>img{
+        height:105px;
+        width:705px;  
+        object-fit: contain;
+    }
+</style>
+
+<link rel="stylesheet" href="./cardcontainer.css">
+
+<script src="https://kit.fontawesome.com/9f09cbf9fc.js" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="./Accordin.css">
+<body>
+    
+    <div class="firstdiv">
+        <h3 style="margin-left: 40px;">2.MAKE PAYMENT</h3>
+        <h4  style="margin-right: 30px;">Payable Amount:  <span> count </span>   </h4>
+    </div>
+    <div class="seconddiv">
+        <img src="https://sslimages.shoppersstop.com/sys-master/root/hff/heb/16687090991134/Cart-Pg-strip.jpg" alt="">
+    </div>
+
+    <!-- two divs in accordin from here -->
+
+
+    <div class="accordion">
+
+
+         <!-- CREDIT CARD -->
+
+        <div class="accordion-item">
+          
+          <div class="accordion-item-header">
+
+              <div style="margin-left:20px;"><i class="fa-solid fa-credit-card"></i></i></div>
+              <div>
+                  <p style="font-family: sans-serif;font-size: 14px">CARD</p>
+                  <p style="font-family: serif;font-size: 12px;" >Pay Using Credit card / Debit card</p>
+                  
+                </div>
+              
+              
+            </div>
+          
+          <div class="accordion-item-body">
+
+              <div class="accordion-item-body-content">
+  
+                <div id="CardContainer">
+
+
+                    <h3>Enter Debit / Credit Card Details</h3>
+                    <hr>
+
+
+                    <form action="" id="paymentForm">
+
+                        Card Number   <i class="fa-solid fa-credit-card"></i>
+                        <input id="carnNumber2233" type="text" placeholder="Enter Card Number" style="height:40px;width:250px;margin-bottom:10px;display:block" >
+                        <p style="display:inline-block;">Expiry</p>
+                        <p  style="display:inline-block;margin-left:100px;margin-right:120px">CVV</p>
+
+                        <input type="text" style="height:40px;width:100px;margin-bottom:10px;margin-right:30px;" placeholder="MM/YY" >
+                        <input id="CvvPin2233" type="text" style="height:40px;width:100px;margin-bottom:10px;" placeholder="CVV">
+
+                        <input type="submit" value="PLACE ORDER"  style="height:35px;border-radius:12%;background-color:rgba(255, 68, 0, 0.722);color:white;display:block;" >
+
+                        <!-- <button style="height:35px;border-radius:12%;background-color:rgba(255, 68, 0, 0.722);color:white;">PLACE ORDER</button> -->
+
+
+                    </form>
+
+
+
+                </div>
+              
+                  
+  
+              </div>
+             
+              
+  
+          </div>
+      </div>
+
+
+
+
+        <!-- NET BANKING -->
+
+
+      <div class="accordion-item">
+          
+        <div class="accordion-item-header">
+
+            <div style="margin-left:20px;"><i class="fa-solid fa-building-columns"></i></i></div>
+            <div>
+                <p style="font-family: sans-serif;font-size: 14px">NET BANKING</p>
+                <p style="font-family: serif;font-size: 12px;" >Pay Using Net Banking</p>
+                
+              </div>
+            
+            
+          </div>
+        
+        <div class="accordion-item-body">
+
+            <div class="accordion-item-body-content">
+
+               
+               <div id="NetBankContainer">
+
+
+                <div style="display:flex;gap:10px;">
+
+
+                    <div>
+                        <img src="https://assets.juspay.in/juspay/payments/in.hyper.pay.bb_staging/beta/WEB/1.0rc1/assets/ic_bank_607153.png" alt="">
+                        <p>AXIS</p>
+                    </div>
+
+                    <div>
+                        <img src="https://assets.juspay.in/juspay/payments/in.hyper.pay.bb_staging/beta/WEB/1.0rc1/assets/ic_bank_508534.png" alt="">
+                        <p>ICICI</p>
+                    </div>
+
+                    <div>
+                        <img src="https://assets.juspay.in/juspay/payments/in.hyper.pay.bb_staging/beta/WEB/1.0rc1/assets/ic_bank_508548.png" alt="">
+                        <p>SBI</p>
+                    </div>
+
+                    <div>
+                        <img src="https://assets.juspay.in/juspay/payments/in.hyper.pay.bb_staging/beta/WEB/1.0rc1/assets/ic_bank_508568.png" alt="">
+                        <p>PNB</p>
+                    </div>
+
+
+                </div>
+
+                <input type="text" placeholder="Search" style="height:25px;width:300px;">
+                <!-- <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"> -->
+
+
+                <div id="netBankScrollerDiv">
+
+                    <div style="height:50px;width:375px;display:flex ;justify-content: space-around ; gap:15px; border-bottom:0.5px solid black;">
+                        <img src="https://assets.juspay.in/juspay/payments/in.hyper.pay.bb_staging/beta/WEB/1.0rc1/assets/ic_bank_607153.png" alt="">
+                        <p>Axis  Bank</p>
+                        <input type="radio" id="" name="" value="" style="margin-top:15px;">
+                    </div>
+
+                    <div style="height:50px;width:375px;display:flex ;justify-content: space-around ;gap:15px; border-bottom:0.5px solid black;">
+                        <img src="https://assets.juspay.in/juspay/payments/in.hyper.pay.bb_staging/beta/WEB/1.0rc1/assets/ic_bank_606985.png" alt="">
+                        <p>Bank of Baroda</p>
+                        <input type="radio" id="" name="" value="" style="margin-top:15px;">
+                    </div>
+
+                    <div style="height:50px;width:375px;display:flex ;justify-content: space-around ;gap:15px;border-bottom:0.5px solid black;">
+                        <img src="https://assets.juspay.in/juspay/payments/in.hyper.pay.bb_staging/beta/WEB/1.0rc1/assets/ic_bank_607152.png" alt="">
+                        <p>HDFC Bank</p>
+                        <input type="radio" id="" name="" value="" style="margin-top:15px;">
+                    </div>
+
+                    <div style="height:50px;width:375px;display:flex ;justify-content: space-around ;gap:15px;border-bottom:0.5px solid black;">
+                        <img src="https://assets.juspay.in/juspay/payments/in.hyper.pay.bb_staging/beta/WEB/1.0rc1/assets/ic_bank_508534.png" alt="">
+                        <p>ICICI Bank</p>
+                        <input type="radio" id="" name="" value="" style="margin-top:15px;">
+                    </div>
+
+                    <div style="height:50px;width:375px;display:flex ;justify-content: space-around ;gap:15px;border-bottom:0.5px solid black;">
+                        <img src="https://assets.juspay.in/juspay/payments/in.hyper.pay.bb_staging/beta/WEB/1.0rc1/assets/ic_bank_607420.png" alt="">
+                        <p>Kotak Bank</p>
+                        <input type="radio" id="" name="" value="" style="margin-top:15px;">
+                    </div>
+
+                    <div style="height:50px;width:375px;display:flex ;justify-content: space-around ;gap:15px;border-bottom:0.5px solid black;">
+                        <img src="https://assets.juspay.in/juspay/payments/in.hyper.pay.bb_staging/beta/WEB/1.0rc1/assets/ic_bank_508568.png" alt="">
+                        <p>PNB Bank</p>
+                        <input type="radio" id="" name="" value="" style="margin-top:15px;">
+                    </div>
+
+                    <div style="height:50px;width:375px;display:flex ;justify-content: space-around ;gap:15px;border-bottom:0.5px solid black;">
+                        <img src="https://assets.juspay.in/juspay/payments/in.hyper.pay.bb_staging/beta/WEB/1.0rc1/assets/ic_bank_508548.png"" alt="">
+                        <p>State Bank</p>
+                        <input type="radio" id="" name="" value="" style="margin-top:15px;">
+                    </div>
+
+                    <div style="height:50px;width:375px;display:flex ;justify-content: space-around ;gap:15px;border-bottom:0.5px solid black;">
+                        <img src="https://assets.juspay.in/juspay/payments/in.hyper.pay.bb_staging/beta/WEB/1.0rc1/assets/ic_bank_607223.png" alt="">
+                        <p>Yes Bank</p>
+                        <input type="radio" id="" name="" value="" style="margin-top:15px;">
+                    </div>
+
+                    <div style="height:50px;width:375px;display:flex ;justify-content: space-around ;gap:15px;border-bottom:0.5px solid black;">
+                        <img src=" https://assets.juspay.in/juspay/payments/in.hyper.pay.bb_staging/beta/WEB/1.0rc1/assets/ic_bank_508532.png " alt="">
+                        <p> Bank</p>
+                        <input type="radio" id="" name="" value="" style="margin-top:15px;">
+                    </div>
+
+                </div>
+
+                <button style="height:35px;border-radius:12%;background-color:rgba(255, 68, 0, 0.722);color:white;margin-top:20px;margin-left:120px;">PLACE ORDER</button>
+
+
+
+               </div>
+                
+
+            </div>
+           
+            
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+     <!-- WALLET -->
+
+
+     <div class="accordion-item">
+          
+        <div class="accordion-item-header">
+
+            <div style="margin-left:20px;"><i class="fa-solid fa-wallet"></i></i></div>
+            <div>
+                <p style="font-family: sans-serif;font-size: 14px">WALLETS</p>
+                <p style="font-family: serif;font-size: 12px;" >Pay Using Digital Wallets</p>
+                
+              </div>
+            
+            
+          </div>
+        
+        <div class="accordion-item-body">
+
+            <div class="accordion-item-body-content">
+
+              
+              <div id="CardContainer">
+                <div id="netBankScrollerDiv">
+
+                    <div style="height:50px;width:375px;display:flex ;justify-content: space-around ; gap:15px; border-bottom:0.5px solid black;">
+                        <img src="https://payments.juspay.in/web/images/theme_light/airtelmoney.png" alt="">
+                        <p>Airtel Money</p>
+                        <input type="radio" id="" name="" value="" style="margin-top:15px;">
+                    </div>
+
+                    <div style="height:50px;width:375px;display:flex ;justify-content: space-around ;gap:15px; border-bottom:0.5px solid black;">
+                        <img src="https://payments.juspay.in/web/images/theme_light/freecharge.png" alt="">
+                        <p>Freecharge</p>
+                        <input type="radio" id="" name="" value="" style="margin-top:15px;">
+                    </div>
+
+                    <div style="height:50px;width:375px;display:flex ;justify-content: space-around ;gap:15px;border-bottom:0.5px solid black;">
+                        <img src="https://payments.juspay.in/web/images/theme_light/jiomoney.png" alt="">
+                        <p>Jiomoney</p>
+                        <input type="radio" id="" name="" value="" style="margin-top:15px;">
+                    </div>
+
+                    <div style="height:50px;width:375px;display:flex ;justify-content: space-around ;gap:15px;border-bottom:0.5px solid black;">
+                        <img src="https://payments.juspay.in/web/images/theme_light/mobikwik.png" alt="">
+                        <p>Mobikwik</p>
+                        <input type="radio" id="" name="" value="" style="margin-top:15px;">
+                    </div>
+
+                    <div style="height:50px;width:375px;display:flex ;justify-content: space-around ;gap:15px;border-bottom:0.5px solid black;">
+                        <img src="https://payments.juspay.in/web/images/theme_light/olamoney.png" alt="">
+                        <p>Ola money</p>
+                        <input type="radio" id="" name="" value="" style="margin-top:15px;">
+                    </div>
+
+                    <div style="height:50px;width:375px;display:flex ;justify-content: space-around ;gap:15px;border-bottom:0.5px solid black;">
+                        <img src="https://payments.juspay.in/web/images/theme_light/phonepe.png" alt="">
+                        <p>PhonePe</p>
+                        <input type="radio" id="" name="" value="" style="margin-top:15px;">
+                    </div>
+
+                    <!-- <div style="height:50px;width:375px;display:flex ;justify-content: space-around ;gap:15px;border-bottom:0.5px solid black;">
+                        <img src="https://assets.juspay.in/juspay/payments/in.hyper.pay.bb_staging/beta/WEB/1.0rc1/assets/ic_bank_508548.png"" alt="">
+                        <p>State Bank</p>
+                        <input type="radio" id="" name="" value="" style="margin-top:15px;">
+                    </div>
+
+                    <div style="height:50px;width:375px;display:flex ;justify-content: space-around ;gap:15px;border-bottom:0.5px solid black;">
+                        <img src="https://assets.juspay.in/juspay/payments/in.hyper.pay.bb_staging/beta/WEB/1.0rc1/assets/ic_bank_607223.png" alt="">
+                        <p>Yes Bank</p>
+                        <input type="radio" id="" name="" value="" style="margin-top:15px;">
+                    </div>
+
+                    <div style="height:50px;width:375px;display:flex ;justify-content: space-around ;gap:15px;border-bottom:0.5px solid black;">
+                        <img src=" https://assets.juspay.in/juspay/payments/in.hyper.pay.bb_staging/beta/WEB/1.0rc1/assets/ic_bank_508532.png " alt="">
+                        <p> Bank</p>
+                        <input type="radio" id="" name="" value="" style="margin-top:15px;">
+                    </div> -->
+
+                </div>
+
+                <button style="height:35px;border-radius:12%;background-color:rgba(255, 68, 0, 0.722);color:white;margin-top:20px;margin-left:120px;">PLACE ORDER</button>
+
+
+              </div>
+
+
+
+
+                
+
+            </div>
+           
+            
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+      <!-- COD -->
+
+      <div class="accordion-item">
+          
+        <div class="accordion-item-header">
+
+            
+            
+            <div style="margin-left:20px;"> <i class="fa-solid fa-indian-rupee-sign"></i> </i></div>
+            <div>
+                <p style="font-family: sans-serif;font-size: 14px">COD</p>
+                <p style="font-family: serif;font-size: 12px;" >Pay With Cash</p>
+                
+              </div>
+            
+            
+        </div>
+        
+        <div class="accordion-item-body">
+
+            <div class="accordion-item-body-content">
+
+               <h3>Pay via Cash On Delivery</h2>
+               <hr>
+               <p>Never worry about cash at hand any more, pay digitally at the time of delivery. Ask the courier executive for details!
+
+                Pay directly to the courier. No advance payment required now.</p>
+
+                <div style="display:flex;gap:10px;">
+                    <p style=" font-size:12px;">Our Customer Service team may get in touch with you for verification. Prepaid orders are processed immediately</p>
+                    
+                    <button style="height:35px;border-radius:12%;background-color:rgba(255, 68, 0, 0.722);color:white;">PLACE ORDER</button>
+                </div>
+               
+                
+
+            </div>
+
+            
+
+        </div>
+    </div>
+
+
+
+
+        
+
+        
+
+
+
+  
+  
+      </div>
+  
+
+
+
+
+
+
+</body>
+</html>
+
+<script src="./Accordin.js"></script>
+
+
+<script>
+
+
+    let form= document.getElementById("paymentForm");
+    form.addEventListener("submit",(e)=>{
+        e.preventDefault();
+
+        //console.log(form)
+
+        //console.log("Mohit")
+
+        let cardlength=form.carnNumber2233.value;
+
+        let CvvLength=form.CvvPin2233.value;
+
+        console.log(cardlength.length,CvvLength.length );
+
+        if(cardlength.length==16 && CvvLength.length==3 )
+        {
+            alert("Payment Succesfull")
+            window.location.href="thankyou.html";
+        }
+
+        else{
+            alert("Invalid Details");
+        }
+    })
+
+</script>
