@@ -1,0 +1,38 @@
+#contact{
+    width: 100%;
+    height: 740px;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(3,38%);
+    grid-template-rows: repeat(2,1fr);
+   text-align: center;
+}
+#vivek{
+ width: 60%;
+ height: 350px;
+ border: 8px solid whitesmoke;
+}
+#shakir{
+ width: 60%;
+ height: 350px;
+ border: 8px solid whitesmoke;
+}
+#mohit{
+ width: 60%;
+ height: 350px;
+ border: 8px solid whitesmoke;
+}
+#tabrez{
+ width: 60%;
+ height: 350px;
+ border: 8px solid whitesmoke;
+}
+#arun{
+ width: 60%;
+ height: 350px;
+ border: 8px solid whitesmoke;
+}
+.contactimg{
+    height: 180px;
+    width: 50%;
+}
