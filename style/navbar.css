@@ -4,7 +4,7 @@
     height: 60px;
     border: 4px solid whitesmoke;
     /* margin-top: 15px; */
-    justify-content: center;
+    /* justify-content: center; */
     padding: 10px;
     margin-bottom: 15px;
 }
@@ -171,4 +171,17 @@ background-color: tomato;
 }
 #navButton{
     background-color: red;
+
+}
+#cartItem{
+   width:18px;
+    height:18px;
+    color:black;
+    margin-left: -45px;
+    margin-top: 20px;
+    text-align:center;
+    font-weight:bold;
+    font-size:20px;
+    background-color:white;
+    border-radius:10px;
 }

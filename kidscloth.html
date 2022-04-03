@@ -44,10 +44,7 @@
 
 
 <script type="module">
-
-
-
- let kitsClothing=JSON.parse(localStorage.getItem("kidsclothdata"));
+let kitsClothing=JSON.parse(localStorage.getItem("kidsclothdata"));
 
 //  Import Navbar Section-------
 
@@ -74,7 +71,6 @@ let kitsDetails=document.getElementById("main");
 AppentDatashow(kitsClothing,kitsDetails);
 let menDetailAppent=document.getElementById("main");
 
-mensDatashow(kitsClothing,kitsDetails)
 
 
 // footer bar import-------
@@ -110,5 +106,6 @@ document.getElementById("sorter").addEventListener("click",() =>{
    checkbox1.innerHTML =checkbox();
 </script>
 <script src="./data/kidsclothdata.js"></script>
+<script src="./scripts/appentDataShow.js"></script>
 
 

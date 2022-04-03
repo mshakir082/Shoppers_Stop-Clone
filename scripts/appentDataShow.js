@@ -26,11 +26,17 @@ const AppentDatashow=(data,appendDiv)=>{
    
       appendDiv.innerHTML=null
 
-data.forEach(({image_url, name, desc,  price, strike_price, offer})=>{
+data.forEach(({image_url, image_url1,image_url2, name, desc,  price, strike_price, offer})=>{
 
 
         let rowDiv=document.createElement("div");
          rowDiv.id="homeDataRowDiv";
+
+         rowDiv.addEventListener("click",function(){
+            
+            addToCart(image_url, image_url1,image_url2, name, desc,  price, strike_price, offer)
+            
+         })
 
          let img=document.createElement("img");
          img.src=image_url;
@@ -84,6 +90,22 @@ data.forEach(({image_url, name, desc,  price, strike_price, offer})=>{
 
    });
 }
+
+
+let data=[]
+
+function addToCart(image_url, image_url1,image_url2, name, desc,  price, strike_price, offer){
+
+let obj={
+   image_url1,image_url2,image_url, name, desc,  price, strike_price, offer,
+}
+    console.log(obj)
+    data.push(obj)
+     localStorage.setItem("cartItems",JSON.stringify(data))
+   
+     window.location.href="productInf.html"
+ }
+
 
 export  {slideImagfun,AppentDatashow} 
 

@@ -1,8 +1,8 @@
 const navbar=()=>{
     return `<div id="navbar_container">
     <div id="left_icons">
-        <h4 ><a href=""><i class="fa-solid fa-store"></i>All Stores</a></h4>
-        <h4><a href=""><i class="fa-solid fa-address-card"></i>Contact Us</a></h4>
+        <h4 ><a href="index.html"><i class="fa-solid fa-store"></i>All Stores</a></h4>
+        <h4><a href="contact.html"><i class="fa-solid fa-address-card"></i>Contact Us</a></h4>
         </div>
     <div id="right_icons">
         <h4><a href=""> <img src="https://prodstatic.shoppersstop.com/_ui/updated_path/images/newLogo.svg"></a></h4>
@@ -10,8 +10,12 @@ const navbar=()=>{
 
         <h4><input type="text" placeholder="Search Products & Brands"><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></h4> 
          <h4><a href=""><i class="fa-regular fa-heart"></i></a></h4>
-         <h4><a href=""><i class="fa-regular fa-cart-flatbed-suitcase"></i></a></h4>
-        <h4><a href=""><i class="fa-regular fa-user"></i></a></h4>
+
+       
+
+         <h4><a href="bag.html"><i class="fa-solid fa-bag-shopping"></i></a></h4>
+         <p id="cartItem"></p>
+        <h4><a href="signup.html"><i class="fa-regular fa-user"></i></a></h4>
    </div>
 </div>
 <div id="all_item_navbar">
@@ -90,7 +94,7 @@ const navbar=()=>{
             <li><a href="">Shaving & Kills</a></li>
             <li><a href="">Bath & Body</a></li>
             <h4><a href="">Haircae</a></h4>
-            <h4><a href="">All Sunglass & Frames</a></h4>
+            <h4><a href="Sunglass.html">All Sunglass & Frames</a></h4>
             <h4><a href="">Shop by shape</a></h4>
 
             <li><a href="">Avitor</a></li>
@@ -100,13 +104,13 @@ const navbar=()=>{
 
         </ul>
         <ul>
-            <img src="https://sslimages.shoppersstop.com/sys-master/root/h02/hc9/27108367990814/stop-men-navigation-banner.jpg">
-            <button id="navButton">shop Now</button>
+              <img style="height:50%;white"src="./image/shakir.jpg" alt="">
+            <button style=" background-color:#333;color:white;border:none;" id="navButton">shop Now</button>
         </ul>
 
         <ul>
-            <img src="https://sslimages.shoppersstop.com/sys-master/root/h6a/h18/27112028274718/celio-navigation-banner.jpg" alt="">
-            <button>Shop Now</button>
+            <img style="height:50%; margin-left:-10px;" src="./image/Mohit.jpg" alt="">
+            <button  style=" background-color:#333;color:white;border:none;">Shop Now</button>
         </ul>
     </div>
     
@@ -120,8 +124,7 @@ const navbar=()=>{
             <li><a href="">women All Products</a>
                 <div class="submenu">
                     <ul class="submenulist">
-                        <h4><a href="">All Clothing</a></h4>
-                        <h4><a href="">Indian-Wear</a></h4>
+                        <h4><a href="WomenIndianWear.html">Indian-Wear</a></h4>
                         
                         <li><a href="">Kurtas</a></li>
                         <li><a href="">Tops</a></li>
@@ -134,7 +137,7 @@ const navbar=()=>{
                         <li><a href="">Shorts</a></li>
                 </ul>
                 <ul class="submenulist">
-                    <h4><a href="">All Clothing</a></h4>
+                <h4><a href="womenFootwear.html">All Footwear</a></h4>
                     <h4><a href="">Western-Wear</a></h4>
                     
                     <li><a href="">Kurtas</a></li>
@@ -149,9 +152,9 @@ const navbar=()=>{
             </ul>
         
                     <ul class="submenulist">
-                        <h4><a href="">All Footwear</a></h4>
-                        <!-- <h4><a href="">T-Shirts & Polos</a></h4>
-                        <h4><a href="">Shirts</a></h4> -->
+                      
+                    <h4><a href="womenwatch.html">All Watches</a></h4>
+                       
                         <li><a href="">Formal Shoes</a></li>
                         <li><a href="">Casual Shoes</a></li>
                         <li><a href="">Sandals & Floaters</a></li>
@@ -172,9 +175,9 @@ const navbar=()=>{
         
                     
                     <ul class="submenulist">
-                        <h4><a href="womenwatch.html">All Watches</a></h4>
+                       
                         <!-- <h4><a href="">T-Shirts & Polos</a></h4>
-                        <h4><a href="">Shirts</a></h4> -->
+                       <-- <h4><a href="">Shirts</a></h4> -->
                         <li><a href="">Smartwatch & Fitness Bands</a></li>
                         <li><a href="">Hybrid</a></li>
                         <li><a href="">Analog</a></li>
@@ -192,11 +195,11 @@ const navbar=()=>{
                     </ul>
         
                     <ul>
-                        <img src="https://sslimages.shoppersstop.com/sys-master/root/h43/he9/27108368121886/zink-london-navigation-banner.jpg">
-                        <button>Shop Now</button>
+                        <img style="height:50%" src="https://sslimages.shoppersstop.com/sys-master/root/h43/he9/27108368121886/zink-london-navigation-banner.jpg">
+                        
                     </ul>
                     <ul>
-                        <img src="https://sslimages.shoppersstop.com/sys-master/root/h53/hec/27108368056350/stop-navigation-banner.jpg" alt="">
+                        <img style="height:50%; margin-left:-15px" src="https://sslimages.shoppersstop.com/sys-master/root/h53/hec/27108368056350/stop-navigation-banner.jpg" alt="">
                         <button>Shop Now</button>
                     </ul>
                 </div></li>
@@ -206,30 +209,30 @@ const navbar=()=>{
     <li><a href="">KIDS</a>
     
         <ul>
-            <li><a href="">Kids All Product</a>
+            <li><a href="">Kid's All Product</a>
             <div class="submenu">
                 <ul class="submenulist">
-                    <h4><a href="kidscloth.html">All Clothing</a></h4>
-                    <h4><a href="">T-Shirts & Polos</a></h4>
-                    <h4><a href="">Shirts</a></h4>
-                    <li><a href="">All Shirts</a></li>
-                    <li><a href="">Casual</a></li>
+                    <h4><a href="kidscloth.html">Kid's Clothing</a></h4>
+                    <h4><a href="kidsfootwear.html">Kid's Footwea</a>r</h4>
+                    <h4><a href="kidswatch.html">Kid's Watches</a></h4>
+                    <li><a href="boyswear.html">Boy's Wear</a></li>
+                    <li><a href="boyswear.html">Casual</a></li>
                     <li><a href="">Formal</a></li>
-                    <h4><a href="">Jeans</a></h4>
+                    <h4><a href="boyswear.html">Jeans</a></h4>
                     <h4><a href="">All Trousers</a></h4>
     
                     <li><a href="">Trousers</a></li>
-                    <li><a href="">Casual</a></li>
-                    <li><a href="">Formal</a></li>
+                    <li><a href="boyswear.html">Casual</a></li>
+                    <li><a href="boyswear.html">Formal</a></li>
                    
                    
                    
                 </ul>
     
                 <ul class="submenulist">
-                    <h4><a href="kidsfootwear.html">All Footwear</a></h4>
-                    <!-- <h4><a href="">T-Shirts & Polos</a></h4>
-                    <h4><a href="">Shirts</a></h4> -->
+                    <h4><a href="kidsfootwear.html">Girl's All Products</a></h4>
+                     <h4><a href="girlswear.html">Girl's Wear</a></h4>
+                    <h4><a href="infants.html">Infant's</a></h4>
                     <li><a href="">Formal Shoes</a></li>
                     <li><a href="">Casual Shoes</a></li>
                     <li><a href="">Sandals & Floaters</a></li>
@@ -251,13 +254,13 @@ const navbar=()=>{
                 
                 <ul class="submenulist">
                     <h4><a href="kidswatch.html">All Watches</a></h4>
-                    <!-- <h4><a href="">T-Shirts & Polos</a></h4>
-                    <h4><a href="">Shirts</a></h4> -->
+                    <h4><a href="">T-Shirts & Polos</a></h4>
+                    <h4><a href="">Shirts</a></h4> 
                     <li><a href="">Smartwatch & Fitness Bands</a></li>
                     <li><a href="">Hybrid</a></li>
                     <li><a href="">Analog</a></li>
-                    <!-- <h4><a href=""></a></h4>
-                    <h4><a href="">All Trousers</a></h4> -->
+                     <h4><a href=""></a></h4>
+                    <h4><a href="">All Trousers</a></h4> 
     
                     <li><a href="">Analog Digital</a></li>
                     <li><a href="">Digital</a></li>
@@ -266,12 +269,12 @@ const navbar=()=>{
     
                 </ul>
                     <ul>
-                        <img src="https://sslimages.shoppersstop.com/sys-master/root/h79/h1e/27112028405790/hamleys-navigation-banner.jpg" alt="">
-                        <button>Shop Now</button>
+                        <img style="height:50%" src="https://sslimages.shoppersstop.com/sys-master/root/h79/h1e/27112028405790/hamleys-navigation-banner.jpg" alt="">
+                       
 
                     </ul>
                     <ul>
-                        <img src="https://sslimages.shoppersstop.com/sys-master/root/h94/he8/27108368187422/karrot-navigation-banner.jpg" alt="">
+                        <img style="height:50%" src="https://sslimages.shoppersstop.com/sys-master/root/h94/he8/27108368187422/karrot-navigation-banner.jpg" alt="">
                         <button>Shop Now</button>
 
                     </ul>
@@ -287,7 +290,7 @@ const navbar=()=>{
                 <div class="submenu">
                     <ul class="submenulist">
                         <h4><a href="">Make Up</a></h4>
-                        <!-- <h4><a href="">T-Shirts & Polos</a></h4> -->
+                        <h4><a href="">T-Shirts & Polos</a></h4> 
                         <h4><a href="">Face</a></h4>
                         <li><a href="">BB & CC Cream</a></li>
                         <li><a href="">Bluah</a></li>
@@ -357,7 +360,7 @@ const navbar=()=>{
         
                     </ul>
                     <ul>
-                        <img src="https://sslimages.shoppersstop.com/sys-master/root/h49/h25/27112028602398/mac-navigation-banner.jpg" alt="">
+                        <img style="height:50%;margin-left:-15px;" src="https://sslimages.shoppersstop.com/sys-master/root/h49/h25/27112028602398/mac-navigation-banner.jpg" alt="">
                         <button>Shop Now</button>
                     </ul>
                 </div></li>
@@ -428,8 +431,8 @@ const navbar=()=>{
                     </ul>
         
              <ul>
-                 <img src="https://sslimages.shoppersstop.com/sys-master/root/hf4/hda/27108368580638/ivy-navigation-banner.jpg" alt="">
-                 <button>Shop Now</button>
+                 <img  style="height:50%;margin-left:-15px;" src="https://sslimages.shoppersstop.com/sys-master/root/hf4/hda/27108368580638/ivy-navigation-banner.jpg" alt="">
+               
              </ul>
                     
                    
@@ -496,22 +499,7 @@ const navbar=()=>{
                 </ul>
     
     
-                
-                <ul class="submenulist">
-                    <h4><a href="">All Skin Care</a></h4>
-                    
-                    <li><a href="">Eye care</a></li>
-                    <li><a href="">Lip Care</a></li>
-                    <li><a href="">Mask</a></li>
-                   
-    
-                    <li><a href="">Scrubs</a></li>
-                    <li><a href="">SunCare</a></li>
-                    <li><a href="">Treatments</a></li>
-                   
-    
-                </ul>
-            </div></li>
+                  </div></li>
            
            
           
@@ -532,8 +520,8 @@ const navbar=()=>{
                   
                    
                         <ul>
-                            <img src="https://sslimages.shoppersstop.com/sys-master/root/h6e/h74/27108369498142/versace-navigation-banner.jpg" alt="">
-                            <button>Shop Now</button>
+                            <img style="height:50%;" src="https://sslimages.shoppersstop.com/sys-master/root/h6e/h74/27108369498142/versace-navigation-banner.jpg" alt="">
+                            
                         </ul>
                    
                 </ul>
@@ -564,8 +552,9 @@ const navbar=()=>{
                     <li><a href="">Life</a></li>
                    
                     <ul>
-                        <img src="https://sslimages.shoppersstop.com/sys-master/root/he9/h49/27112019394590/life-navigation-banner.jpg" alt="">
-                        <button>Shop Now</button>
+                        <img style="height:50%;"src="https://sslimages.shoppersstop.com/sys-master/root/he9/h49/27112019394590/life-navigation-banner.jpg" alt="">
+                 
+                       
                     </ul>
                    
                 </ul>

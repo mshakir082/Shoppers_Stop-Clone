@@ -1,14 +1,19 @@
-let cartData = JSON.parse(localStorage.getItem('womenwatch'));
+let cartData = JSON.parse(localStorage.getItem('cart'));
+
+
+document.getElementById("items").innerText=`(${cartData.length} ITEMS)`
 
 // --------------display BAg Details -----------------
 
-const display=(cartData)=>{
+function display(cartData){
 
-
+  
     document.querySelector('#products').innerHTML = "";
-
+    document.getElementById("items").innerText=`(${cartData.length} ITEMS)`
     cartData.map((ele,index)=>{
-        console.log(ele);
+        
+        orderSummary(cartData)
+
         // ---------img div---------
 
         let div = document.createElement('div');
@@ -110,7 +115,7 @@ const display=(cartData)=>{
     del.addEventListener('click',(event)=>{
 
         cartData.splice(index,1);
-        localStorage.setItem("womenwatch",JSON.stringify(womenswatchData));
+        localStorage.setItem("cart",JSON.stringify(cartData))
     
         display(cartData);
         orderSummary(cartData)
@@ -146,7 +151,8 @@ const display=(cartData)=>{
 
 
 // -----------------------ordersummary----------------------------
-
+let obj={};
+let data=[];
 function orderSummary(arr){
 
     var total = 0;
@@ -159,9 +165,23 @@ function orderSummary(arr){
     let order_subtotal = document.getElementById('subtotal');
     order_subtotal.innerText =  "₹" +total;
 
+
     let payable = document.getElementById('payable');
     payable.innerText = "₹"+ Number(total);
-    
+    obj["subtotal"]= Number(total);
+
+     // uperDiv Total
+     let uperTotal =document.getElementById('total');
+   
+         payable = document.getElementById('payable');
+    payable.innerText = "₹"+ Number(total);
+
+    uperTotal.innerText = "₹"+ Number(total);
+
+    obj["total"]= Number(total);
+   
+  
+
     let apply = document.getElementById('apply');
 
     apply.addEventListener('click',()=>{
@@ -175,14 +195,24 @@ function orderSummary(arr){
             invalid_display.style.color = 'green';
             invalid_display.textContent = 'Coupon Applied !'
 
-
+           
+            
             let couponDiscount =document.getElementById('coupon-discount');
             
             couponDiscount.innerText = total*30/100;
     
             total = total - total*30/100;
 
+
             payable.innerHTML = "₹"+ Math.ceil(total);;
+
+            payable.innerHTML = "₹"+ Math.ceil(total);
+            uperTotal.innerText= "₹"+ Math.ceil(total);
+
+            obj["discount"]=  total*30/100;
+            obj["total"]=Math.ceil(total);
+          
+
         }
         else{
             
@@ -192,7 +222,13 @@ function orderSummary(arr){
             invalid_display.textContent = 'Invalid coupon'
 
         }
+        data.push(obj);
+        localStorage.setItem("checkout",JSON.stringify(data))
     })
 }
 display(cartData)
 
+document.getElementById("check-btn").addEventListener("click",()=>{
+
+    window.location.href="checkout.html"
+})

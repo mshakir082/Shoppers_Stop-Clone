@@ -50,7 +50,7 @@ const footerbar=()=>{
          <img id="ques_img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Icon-round-Question_mark.svg/2048px-Icon-round-Question_mark.svg.png">
          <p>QUESTIONS?</p>
         </div>
-        <a id="a"  href="customercare@shoppersstop.com">customercare@shoppersstop.com</a>
+        <a id="a" "  href="customercare@shoppersstop.com">customercare@shoppersstop.com</a>
     </div>
    
        

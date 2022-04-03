@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>otp page</title>
+    <link rel="stylesheet" href="./style/loginsignupotp.css">
+   
+</head>
+<body>
+    <div id="otpupper">
+        <a id="arrow" href="./signup.html">&#8592</a>
+       <h4><a id="skip" href="">skip</a></h4>
+        <h1>Verify OTP</h1>
+        <h4 id="otpsent">Enter the 6-digit OTP sent to +91-******3423</h4>
+    </div>
+    <div id="otplower">
+       <form id="otpform">
+           <input type="text" maxlength="1" id="first"  onkeyup="clickEvent(this,'sec')">
+           <input type="text" maxlength="1" id="sec"  onkeyup="clickEvent(this,'third')">
+           <input type="text" maxlength="1" id="third"  onkeyup="clickEvent(this,'four')">
+           <input type="text" maxlength="" id="four"  onkeyup="clickEvent(this,'five')">
+           <input type="text" maxlength="" id="five"  onkeyup="clickEvent(this,'six')"><br><br><br>
+           <input type="submit" id="submit">
+           <h4><a id="resend" href="">resend otp</a></h4>
+       </form>
+    </div>
+</body>
+</html>
+<script src="./scripts/otp.js"></script>
