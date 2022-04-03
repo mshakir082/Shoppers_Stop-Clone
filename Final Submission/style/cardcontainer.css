@@ -1,0 +1,45 @@
+#CardContainer{
+
+margin-left:120px;
+/* height:400px; */
+width:350px;
+/* border:2px solid black; */
+/* display:inline-block; */
+
+}
+
+
+#NetBankContainer{
+
+    margin-left:120px;
+    height:500px;
+    width:400px;
+    /* border:2px solid black; */
+   
+
+}
+
+#NetBankContainer > div >div>img{
+
+    height:40px;
+    width:50px;
+    object-fit:contain;
+
+}
+
+#netBankScrollerDiv{
+margin-top:10px;
+overflow-y:scroll;
+/* border:1px solid black; */
+height:270px;
+width:400px;
+
+}
+
+#netBankScrollerDiv>div>img{
+
+    height:40px;
+    width:50px;
+    object-fit:contain;
+
+}

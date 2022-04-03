@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/bag.css">
+    <script src="https://kit.fontawesome.com/088bab0eb4.js" crossorigin="anonymous"></script>
+    <title>Bag page</title>
+</head>
+<style>
+    #cart-first {
+        /* border: 1px solid red; */
+        width: 100%;
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+    }
+    #iconDiv{
+        margin-top: 25px;
+        color: grey;
+    }
+    #mainToral{
+        
+         /* border: 1px solid red; */
+         width: 80%;
+        height: 50px;
+        display: flex;
+        justify-content: space-around;
+    }
+</style>
+
+<body>
+    <div id="cart-first">
+        <div id="iconDiv"><a href="index.html"><i class="fa-solid fa-less-than"></i></a></div>
+        <div ><img src="https://prodstatic.shoppersstop.com/_ui/updated_path/images/newLogo.svg"></div>
+        <div><h2 style=" color: grey;">SECURE TRANSACTION</h2></div>
+    </div>
+
+    <div id="seconImg"><img style="width: 100%;" src="https://sslimages.shoppersstop.com/sys-master/root/h99/h94/27349040529438/Strip-Web.jpg"></div>
+<!-- Items Number And Total price -->
+    <div id="mainToral">
+        <div style="display:flex;">
+            <h2>SHOPPING BAG</h2><br>
+            <p id="items">(5 ITEM)</p>
+        </div>
+        <div  style="display:flex;">
+            <p>TOTAL</p>
+            <h3 id="total">0</h3>
+        </div>
+    </div>
+    <hr>
+    <div id="pinCodeDiv">
+        <h5>DELIVERY & EXPRESS STORE PICK UP</h5>
+        <input type="text" placeholder=" Enter Pincode" id="pincode">
+        <input type="button" id="check" value="CHECK">
+    </div>
+
+<!-- Pincode Check Item How Many Day to take delivery -->
+
+    <div>
+        <!-- <h1 id="cart-name">Cart</h1> -->
+    </div>
+    <div class="cart-pro">
+        <!-- <p>Products</p>
+        <p>Amount</p> -->
+    </div>
+    <div id="container">
+        <div id="products">
+        </div>
+        <div id="order-summary">
+            <div class="summary">
+                <h3>ORDER SUMMARY</h3>
+                <input type="text" placeholder="Enter promo/coupon code" id="coupon">
+                <input type="button" id="apply" value="APPLY">
+                <p id='invalid'></p>
+            </div>
+            <hr>
+            <div id="total-box">
+                <p>Subtotal</p>
+                <p id="subtotal">0</p>
+                <p>Delivery charges</p>
+                <p>FREE</p>
+                <p>Gift packing</p>
+                <p>FREE</p>
+                <p>Discount</p>
+                <p id="coupon-discount">NA</p>
+            </div>
+            <hr>
+            <div id="payable-box">
+                <h4>Payable Amount</h4>
+                <p id="payable"></p>
+            </div>
+            <div class="check">
+                <input type="button" value="CHECKOUT" id="check-btn">
+            </div>
+        </div>
+    </div><br>
+
+
+
+</body>
+
+</html>
+<script src="./scripts/bag.js"></script>
+<script src="./scripts/womendata.js"></script>
