@@ -3,7 +3,9 @@ let data=JSON.parse(localStorage.getItem("cartItems"))
    const mensDatashow=(data)=>{
 
   
+
     data.forEach(({image_url,image_url1,image_url2, name, desc,  price})=>{
+
     
       
        let nametag=document.getElementById("nameTag");
@@ -11,7 +13,9 @@ let data=JSON.parse(localStorage.getItem("cartItems"))
     
     
        let descript=document.getElementById("descTag");
+
        descript.innerText=desc;
+
     
        let img=document.getElementById("smallImg");
        img.src=image_url;
@@ -26,15 +30,18 @@ let data=JSON.parse(localStorage.getItem("cartItems"))
        nametag.innerText=name;
     
        descript=document.getElementById("descDiv");
+
        descript.innerText=desc;
        document.querySelector(".addBtn").addEventListener("click",()=>{
       
         showItem(image_url,image_url1,image_url2, name, desc,  price)
+
     })
     
     document.querySelector(".addBtn1").addEventListener("click",()=>{
       
       showItem(image_url,image_url1,image_url2, name, desc,  price)
+
       
     })
     
@@ -46,6 +53,7 @@ let data=JSON.parse(localStorage.getItem("cartItems"))
        }
        
       
+
      
       // let cartItem= JSON.parse(localStorage.getItem("cart")) ||[]
       
@@ -55,6 +63,7 @@ let data=JSON.parse(localStorage.getItem("cartItems"))
         let cartItem= JSON.parse(localStorage.getItem("cart")) ||[]
         let obj={
             image_url,image_url1,image_url2, name, desc,  price
+
         }
         cartItem.push(obj)
         localStorage.setItem("cart",JSON.stringify(cartItem))
@@ -63,7 +72,9 @@ let data=JSON.parse(localStorage.getItem("cartItems"))
         // console.log("tab")
        
       }
+
       mensDatashow(data)
+
          
      
     
