@@ -36,6 +36,11 @@ i{
     margin-top: 10px;
    
 }
+a{
+    cursor: none;
+   
+}
+
 input{
     height: 40px;
     width: 400px;

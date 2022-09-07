@@ -24,7 +24,7 @@ const navbar=()=>{
     <li><a href="">Mens All Product</a>
     <div class="submenu">
         <ul class="submenulist">
-            <h4><a href="mensClothing.html">All Clothing</a></h4>
+            <h4><a style=" cursor: pointer;" href="mensClothing.html">All Clothing</a></h4>
             <h4><a href="">T-Shirts & Polos</a></h4>
             <h4><a href="">Shirts</a></h4>
             <li><a href="">All Shirts</a></li>
@@ -42,7 +42,7 @@ const navbar=()=>{
         </ul>
 
         <ul class="submenulist">
-            <h4><a href="mensfootwear.html">All Footwear</a></h4>
+            <h4><a style=" cursor: pointer;" href="mensfootwear.html">All Footwear</a></h4>
             <!-- <h4><a href="">T-Shirts & Polos</a></h4>
             <h4><a href="">Shirts</a></h4> -->
             <li><a href="">Formal Shoes</a></li>
@@ -65,7 +65,7 @@ const navbar=()=>{
 
         
         <ul class="submenulist">
-            <h4><a href="menswatch.html">All Watches</a></h4>
+            <h4><a style=" cursor: pointer;" href="menswatch.html">All Watches</a></h4>
             <!-- <h4><a href="">T-Shirts & Polos</a></h4>
             <h4><a href="">Shirts</a></h4> -->
             <li><a href="">Smartwatch & Fitness Bands</a></li>
@@ -173,7 +173,7 @@ const navbar=()=>{
         
                     
                     <ul class="submenulist">
-                        <h4><a href="womenwatch.html">All Watches</a></h4>
+                        <h4><a style=" cursor: pointer;" href="womenwatch.html">All Watches</a></h4>
                         <!-- <h4><a href="">T-Shirts & Polos</a></h4>
                         <h4><a href="">Shirts</a></h4> -->
                         <li><a href="">Smartwatch & Fitness Bands</a></li>
@@ -210,7 +210,7 @@ const navbar=()=>{
             <li><a href="">Kids All Product</a>
             <div class="submenu">
                 <ul class="submenulist">
-                    <h4><a href="kidscloth.html">All Clothing</a></h4>
+                    <h4><a style=" cursor: pointer;" href="kidscloth.html">All Clothing</a></h4>
                     <h4><a href="">T-Shirts & Polos</a></h4>
                     <h4><a href="">Shirts</a></h4>
                     <li><a href="">All Shirts</a></li>
@@ -228,7 +228,7 @@ const navbar=()=>{
                 </ul>
     
                 <ul class="submenulist">
-                    <h4><a href="kidsfootwear.html">All Footwear</a></h4>
+                    <h4><a style=" cursor: pointer;" href="kidsfootwear.html">All Footwear</a></h4>
                     <!-- <h4><a href="">T-Shirts & Polos</a></h4>
                     <h4><a href="">Shirts</a></h4> -->
                     <li><a href="">Formal Shoes</a></li>
@@ -251,7 +251,7 @@ const navbar=()=>{
     
                 
                 <ul class="submenulist">
-                    <h4><a href="kidswatch.html">All Watches</a></h4>
+                    <h4><a style=" cursor: pointer;" href="kidswatch.html">All Watches</a></h4>
                     <!-- <h4><a href="">T-Shirts & Polos</a></h4>
                     <h4><a href="">Shirts</a></h4> -->
                     <li><a href="">Smartwatch & Fitness Bands</a></li>
